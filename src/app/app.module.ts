@@ -11,20 +11,9 @@ import { TravelComponent } from './pages/travel/travel.component';
 import { VenueComponent } from './pages/venue/venue.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomepageComponent,
-    HeaderComponent,
-    FooterComponent,
-    EventsComponent,
-    TravelComponent,
-    VenueComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, HomepageComponent, HeaderComponent, FooterComponent, EventsComponent, TravelComponent, VenueComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

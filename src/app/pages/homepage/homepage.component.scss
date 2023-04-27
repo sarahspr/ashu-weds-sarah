@@ -2,12 +2,7 @@
   flex-direction: column;
   &__hero {
     align-items: center;
-    background-image: radial-gradient(
-        circle,
-        rgba(0, 104, 149, 0.3) 0%,
-        rgba(6, 93, 131, 0.3) 35%
-      ),
-      url("../../../assets/images/textured-background.jpg");
+    background-image: radial-gradient(circle, rgba(0, 104, 149, 0.3) 0%, rgba(6, 93, 131, 0.3) 35%), url('../../../assets/images/textured-background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,7 +15,7 @@
     width: 100%;
     &::after {
       bottom: 0;
-      content: "";
+      content: '';
       left: 0;
       position: absolute;
       right: 0;

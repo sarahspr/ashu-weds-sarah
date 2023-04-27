@@ -1,4 +1,4 @@
-@use "/node_modules/flexbox-grid-mixins/dart-sass/flexbox-grid-mixins";
+@use '/node_modules/flexbox-grid-mixins/dart-sass/flexbox-grid-mixins';
 
 .grid {
   @include flexbox-grid-mixins.grid();

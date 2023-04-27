@@ -1,0 +1,42 @@
+@use "/node_modules/flexbox-grid-mixins/dart-sass/flexbox-grid-mixins";
+
+.grid {
+  @include flexbox-grid-mixins.grid();
+}
+
+.grid__col-1 {
+  @include flexbox-grid-mixins.grid-col(1);
+}
+.grid__col-2 {
+  @include flexbox-grid-mixins.grid-col(2);
+}
+.grid__col-3 {
+  @include flexbox-grid-mixins.grid-col(3);
+}
+.grid__col-4 {
+  @include flexbox-grid-mixins.grid-col(4);
+}
+.grid__col-5 {
+  @include flexbox-grid-mixins.grid-col(5);
+}
+.grid__col-6 {
+  @include flexbox-grid-mixins.grid-col(6);
+}
+.grid__col-7 {
+  @include flexbox-grid-mixins.grid-col(7);
+}
+.grid__col-8 {
+  @include flexbox-grid-mixins.grid-col(8);
+}
+.grid__col-9 {
+  @include flexbox-grid-mixins.grid-col(9);
+}
+.grid__col-10 {
+  @include flexbox-grid-mixins.grid-col(10);
+}
+.grid__col-11 {
+  @include flexbox-grid-mixins.grid-col(11);
+}
+.grid__col-12 {
+  @include flexbox-grid-mixins.grid-col(12);
+}

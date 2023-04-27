@@ -1,0 +1,51 @@
+.homepage-section {
+  flex-direction: column;
+  &__hero {
+    align-items: center;
+    background-image: radial-gradient(
+        circle,
+        rgba(0, 104, 149, 0.3) 0%,
+        rgba(6, 93, 131, 0.3) 35%
+      ),
+      url("../../../assets/images/textured-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: calc(100vh - 100px);
+    position: relative;
+    width: 100%;
+    &::after {
+      bottom: 0;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
+    h1 {
+      // margin-bottom: 30px;
+      text-align: center;
+      span {
+        font-size: 1.7rem;
+        font-weight: normal;
+      }
+    }
+  }
+  &__image {
+    flex-direction: column;
+    margin-bottom: 30px;
+    &__grid-col {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      &:first-of-type {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

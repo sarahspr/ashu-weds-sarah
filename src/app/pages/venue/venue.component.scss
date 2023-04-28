@@ -1,3 +1,33 @@
+@import '../../../styles/abstracts/variables';
+
 .venue-section {
   flex-direction: column;
+  &__description-wrapper {
+    margin-bottom: 10rem;
+    max-width: 75%;
+    p {
+      text-align: center;
+    }
+  }
+  &__images-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image-wrapper {
+    height: 40rem;
+    max-width: 48%;
+    width: 100%;
+    &.col-1 {
+      background-image: url('../../../assets/images/venue-1.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &.col-2 {
+      background-image: url('../../../assets/images/venue-2.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 }

@@ -1,11 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+/* Order of import affects the styles */
 
 /* Abstracts */
-// @import './abstracts/variables';
 @import './abstracts/colors';
+@import './abstracts/grid';
 @import './abstracts/mixins';
 
 /* Base */
 @import './base/base';
-@import './base/reset.scss';
+@import './base/reset';
 @import './base/typography';
+
+/* Helpers */
+@import './helpers/typography';

@@ -1,45 +1,44 @@
-.homepage-section {
-  flex-direction: column;
-  padding: 0;
+@import '../../../styles/abstracts/variables';
+
+.homepage {
   &__hero {
-    align-items: center;
-    background-image: radial-gradient(circle, rgba(0, 104, 149, 0.3) 0%, rgba(6, 93, 131, 0.3) 35%), url('../../../assets/images/textured-background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    min-height: calc(100vh - 100px);
+    background: rgb(255, 253, 245);
+    background: radial-gradient(circle, rgba(255, 253, 245, 1) 31%, rgba(255, 247, 236, 1) 100%);
+    min-height: 102vh;
+    min-height: 800px;
+    padding: 80px 0;
     position: relative;
-    width: 100%;
-    &::after {
-      bottom: 0;
-      content: '';
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: 1;
-    }
-    h1 {
-      text-align: center;
+    width: 100vw;
+    .heading {
+      margin-top: 40px;
+      max-width: 980px;
+      position: relative;
+      text-align: left;
       span {
         font-size: 1.7rem;
-        font-weight: normal;
+        font-weight: 400;
+        margin: 50px auto;
       }
     }
-  }
-  &__image {
-    flex-direction: column;
-    margin-bottom: 30px;
-    &__grid-col {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      &:first-of-type {
-        margin-bottom: 30px;
+
+    .proposal-image-wrapper {
+      border-radius: 5px 150px 5px 5px;
+      margin: 0;
+      overflow: hidden;
+      width: 500px;
+      .proposal-image {
+        width: 100%;
+      }
+    }
+
+    .icon-image {
+      position: absolute;
+      opacity: 0.7;
+
+      &.icon-rings {
+        left: 175px;
+        top: 190px;
+        width: 70px;
       }
     }
   }

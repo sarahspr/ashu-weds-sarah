@@ -30,13 +30,19 @@
 }
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5 h6,
+.h6 {
   font-family: $font-brightwall-reg, serif;
   letter-spacing: 1px;
+  color: $color-black;
 }
 
 h1,
@@ -72,6 +78,7 @@ h5,
   font-size: 2.5rem;
   line-height: 2.7rem;
   margin-bottom: 2.5rem;
+  letter-spacing: 0.8px;
 }
 
 h6,

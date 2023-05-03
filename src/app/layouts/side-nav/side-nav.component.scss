@@ -1,0 +1,28 @@
+@import '../../../styles/abstracts/variables';
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  background-color: #000000;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 0.26s ease-in-out 0.05s;
+  width: 100vw;
+  z-index: 2;
+
+  &.visible {
+    visibility: visible;
+    opacity: 0.84;
+  }
+}
+
+.side-nav__icon {
+  position: fixed;
+  top: 30px;
+  left: 35px;
+  z-index: 3;
+}

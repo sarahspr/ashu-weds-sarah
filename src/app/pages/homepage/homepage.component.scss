@@ -1,45 +1,140 @@
 @import '../../../styles/abstracts/variables';
 
 .homepage {
+  background-color: rgb(255, 253, 245);
+  background: radial-gradient(circle, rgba(255, 253, 245, 1) 31%, rgba(255, 247, 236, 1) 100%);
+
   &__hero {
-    background: rgb(255, 253, 245);
-    background: radial-gradient(circle, rgba(255, 253, 245, 1) 31%, rgba(255, 247, 236, 1) 100%);
-    min-height: 102vh;
-    min-height: 800px;
-    padding: 80px 0;
+    align-items: center;
+    // background: rgb(255, 253, 245);
+    // background: radial-gradient(circle, rgba(255, 253, 245, 1) 31%, rgba(255, 247, 236, 1) 100%);
+    border-top: 1rem solid $homepage;
+    border-right: 1rem solid $homepage;
+    border-left: 1rem solid $homepage;
+    display: flex;
+    height: 100vh;
     position: relative;
-    width: 100vw;
-    .heading {
-      margin-top: 40px;
-      max-width: 980px;
-      position: relative;
-      text-align: left;
-      span {
-        font-size: 1.7rem;
-        font-weight: 400;
-        margin: 50px auto;
+    width: 100%;
+    z-index: 1;
+    @media screen and (max-width: 768px) {
+      height: 100%;
+    }
+
+    &__rings-wrapper {
+      position: absolute;
+      height: 9rem;
+      width: 9rem;
+      &.desktop {
+        bottom: 1rem;
+        left: 25rem;
+        @media screen and (max-width: 768px) {
+          display: none;
+          visibility: hidden;
+        }
+      }
+      &.mobile {
+        display: none;
+        top: -10.5rem;
+        visibility: hidden;
+        @media screen and (max-width: 768px) {
+          display: block;
+          visibility: visible;
+        }
+      }
+      @media screen and (max-width: 991px) {
+        left: 10rem;
+      }
+
+      .icon-image {
+        opacity: 0.7;
       }
     }
 
-    .proposal-image-wrapper {
-      border-radius: 5px 150px 5px 5px;
-      margin: 0;
-      overflow: hidden;
-      width: 500px;
-      .proposal-image {
+    &__content-wrapper {
+      align-items: center;
+      display: flex;
+      height: 50rem;
+      justify-content: space-between;
+      margin: 0 auto;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        height: 100%;
         width: 100%;
       }
     }
-
-    .icon-image {
-      position: absolute;
-      opacity: 0.7;
-
-      &.icon-rings {
-        left: 175px;
-        top: 190px;
-        width: 70px;
+    &__heading-container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 6rem 3rem 0 0;
+      @media screen and (max-width: 768px) {
+        height: 100%;
+        margin: 22rem 0 13rem;
       }
+      span {
+        font-size: 8rem;
+        @media screen and (max-width: 991px) {
+          font-size: 7rem;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 8rem;
+        }
+      }
+    }
+    &__heading {
+      font-size: 12rem;
+      line-height: 12rem;
+      margin-bottom: 4rem;
+      @media screen and (max-width: 991px) {
+        font-size: 10rem;
+        line-height: 10rem;
+        margin-bottom: 3rem;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 12rem;
+        line-height: 12rem;
+        margin-bottom: 5.5rem;
+      }
+    }
+    &__image-wrapper {
+      height: 50rem;
+      margin-left: 3rem;
+      position: relative;
+      width: 33rem;
+      @media screen and (max-width: 991px) {
+        height: 40rem;
+        width: 26rem;
+      }
+      @media screen and (max-width: 768px) {
+        margin-left: 0;
+        width: 33rem;
+      }
+      img {
+        height: 100%;
+        width: auto;
+        @media screen and (max-width: 768px) {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+    &__image-outline {
+      border: 0.3rem solid $homepage;
+      bottom: 2.5rem;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translate(3.5rem, -2.5rem);
+      z-index: -1;
+    }
+  }
+  &__hero-lead {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    h2 {
+      margin-bottom: 0;
     }
   }
 }

@@ -1,6 +1,7 @@
 @import '../../../styles/abstracts/variables';
 
 .site-footer {
+  display: none;
   padding: 0 7rem $default-padding;
   &__wrapper {
     align-items: center;

@@ -1,6 +1,7 @@
 @import '../../../styles/abstracts/variables';
 @import '../../../styles/abstracts/mixins';
 
+$ring-rotate-z: 33deg;
 .homepage {
   background-color: rgb(255, 253, 245);
   background: radial-gradient(circle, rgba(255, 253, 245, 1) 31%, rgba(255, 247, 236, 1) 100%);
@@ -16,32 +17,15 @@
     z-index: 1;
 
     &__rings-wrapper {
-      position: absolute;
       height: 9rem;
+      left: 34.6rem;
+      opacity: 0;
+      position: absolute;
+      top: -6.9rem;
+      transform: rotateZ($ring-rotate-z);
       width: 9rem;
-      &.desktop {
-        bottom: 0;
-        left: 25rem;
-        @media screen and (max-width: 768px) {
-          display: none;
-          visibility: hidden;
-        }
-      }
-      &.mobile {
-        display: none;
-        top: -8rem;
-        visibility: hidden;
-        @media screen and (max-width: 768px) {
-          display: block;
-          visibility: visible;
-        }
-      }
-      @media screen and (max-width: 991px) {
-        left: 10rem;
-      }
-
       .icon-image {
-        opacity: 0.7;
+        opacity: 0.65;
       }
     }
 
@@ -112,7 +96,7 @@
     }
     &__image-outline {
       border: 0.3rem solid $border-color-homepage;
-      border-radius: 41% 4px 41% 41%;
+      border-radius: 42% 4px 42% 42%;
       bottom: 2.5rem;
       left: 0;
       position: absolute;
@@ -129,6 +113,16 @@
     min-height: 100vh;
     padding: 4rem 1rem;
     width: 100%;
+
+    &__image-wrapper {
+      position: relative;
+      width: 20rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
 
     &__heading {
       margin: 5rem;

@@ -4,23 +4,38 @@
   display: flex;
   height: 100%;
   min-height: 95vh;
-  padding: 5rem 2rem;
+  padding: 5rem 1rem;
   width: 400px;
   background-color: #ffdd9b;
+
+  &__logo {
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+  }
   &__nav {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     margin: 0 auto;
     max-width: 95%;
     width: 100%;
-    li {
-      list-style: none;
-      padding: 3rem 0 0.4rem;
-      a {
-        color: $color-black;
-        text-decoration: none;
-      }
+  }
+
+  &__nav-item {
+    list-style: none;
+  }
+
+  &__nav-link {
+    padding: 1.2rem 2.5rem;
+    margin-top: 2rem;
+    max-width: 240px;
+    transition: background-color 0.16s linear;
+    border-radius: 20px 4px 20px 4px;
+    color: $color-black;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $bg-color-secondary-homepage;
     }
   }
 }

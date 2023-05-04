@@ -11,6 +11,7 @@ import { VenueComponent } from './pages/venue/venue.component';
 import { SideNavComponent } from './layouts/side-nav/side-nav.component';
 
 @NgModule({
+  // TODO: convert to standalone mudules and lazy load
   declarations: [AppComponent, HomepageComponent, FooterComponent, EventsComponent, TravelComponent, VenueComponent],
   imports: [BrowserModule, AppRoutingModule, SideNavComponent],
   providers: [],

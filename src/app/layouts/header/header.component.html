@@ -1,25 +1,13 @@
 <header class="site-header">
   <nav class="site-header__nav">
-    <li class="site-header__nav-item">
-      <a href="/" class="site-header__nav-link">Our Story</a>
-    </li>
-    <li class="site-header__nav-item">
-      <a href="events" class="site-header__nav-link">Events</a>
-    </li>
-    <li class="site-header__nav-item">
-      <a href="travel" class="site-header__nav-link">Travel</a>
-    </li>
-    <li class="site-header__nav-item">
-      <a href="venue-and-accommodation" class="site-header__nav-link">Venue & Accomodation</a>
-    </li>
-    <li class="site-header__nav-item">
-      <a href="#" class="site-header__nav-link">RSVP</a>
-    </li>
-    <li class="site-header__nav-item">
-      <a href="#" class="site-header__nav-link">Photos</a>
-    </li>
-    <li class="site-header__nav-item">
-      <a href="#" class="site-header__nav-link">Registry</a>
-    </li>
+    <app-logo class="site-header__logo" [src]="'assets/images/logo-transparent.png'"></app-logo>
+    <a href="events" class="site-header__nav-link" appEventSfx> <li class="site-header__nav-item">Events</li></a>
+    <a href="travel" class="site-header__nav-link" appEventSfx> <li class="site-header__nav-item">Travel</li></a>
+    <a href="venue-and-accommodation" class="site-header__nav-link" appEventSfx>
+      <li class="site-header__nav-item">Venue & Accomodation</li></a
+    >
+    <a href="#" class="site-header__nav-link" appEventSfx> <li class="site-header__nav-item">RSVP</li></a>
+    <a href="#" class="site-header__nav-link" appEventSfx> <li class="site-header__nav-item">Photos</li></a>
+    <a href="#" class="site-header__nav-link" appEventSfx> <li class="site-header__nav-item">Registry</li></a>
   </nav>
 </header>

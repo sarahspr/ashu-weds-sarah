@@ -10,6 +10,7 @@ export class HamburgerIconComponent {
   @Output() iconClicked: EventEmitter<Event> = new EventEmitter();
 
   public onIconClick($event: Event): void {
+    $event.preventDefault();
     this.iconClicked.emit($event);
   }
 }

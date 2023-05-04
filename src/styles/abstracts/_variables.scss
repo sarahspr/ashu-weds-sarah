@@ -1,15 +1,40 @@
 @import './colors';
 
-// Colors
+/*
+===============
+COLORS
+===============
+*/
+// Color palette
+$color-blue: #006895;
+$color-black: #181818;
+$color-orange: #ffdd9b;
+$color-desert: #f9c55e;
+$color-pink: #df5298;
+$color-yew: #fffaf0;
+
+// Color themes
 $primary: $color-blue;
 $secondary: $color-pink;
-$homepage: $color-orange;
+$border-color-primary: $color-orange;
+$bg-color-primary: $color-yew;
+$bg-color-secondary: $color-desert;
+
+// Colors Homepage
+// TODO: Need to change variables dynamically
+$bg-color-homepage: $bg-color-primary;
+$bg-color-secondary-homepage: $bg-color-secondary;
+$border-color-homepage: $border-color-primary;
 
 // Spacing
 $default-margin: 2rem;
 $default-padding: 2rem;
 
-// Fonts
+/*
+===============
+FONTS
+===============
+*/
 $font-brightwall-reg: 'Brightwall Regular';
 $font-brightwall-italic: 'Brightwall Italic';
 $font-brightwall-swash: 'Brightwall Swash';
@@ -17,3 +42,6 @@ $font-livvic-reg: 'Livvic Regular';
 $font-livvic-semibold: 'Livvic SemiBold';
 $font-livvic-bold: 'Livvic Bold';
 $font-livvic-black: 'Livvic Black';
+
+// TODO: create mixins, as we'd want to change border color on page transitions.
+$border-page: 1px solid $border-color-homepage;

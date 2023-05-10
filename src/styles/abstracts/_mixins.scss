@@ -13,3 +13,8 @@ $media-breakpoint-desktop: 1080px;
     @content;
   }
 }
+
+@mixin content-image-shape($b-radius, $min-radius) {
+  border-radius: max(10%, $min-radius) $b-radius max(10%, $min-radius) $b-radius;
+  border: 0.2rem solid $color-primary;
+}

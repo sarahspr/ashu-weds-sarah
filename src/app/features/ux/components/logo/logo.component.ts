@@ -1,5 +1,6 @@
 import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   imports: [NgIf],
@@ -10,4 +11,10 @@ import { Component, Input } from '@angular/core';
 })
 export class LogoComponent {
   @Input() src: string = '';
+
+  constructor(private router: Router) {}
+
+  public onLogoClick($event: MouseEvent): void {
+    this.router.navigateByUrl('/');
+  }
 }

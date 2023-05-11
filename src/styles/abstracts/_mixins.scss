@@ -1,8 +1,5 @@
 @import './variables';
-
-$media-breakpoint-mobile: 767px;
-$media-breakpoint-tablet: 991px;
-$media-breakpoint-desktop: 1080px;
+@import '../base/breakpoints';
 
 // Mobile-first media queries
 @mixin breakpoint-tablet {

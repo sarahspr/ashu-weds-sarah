@@ -49,6 +49,11 @@ h1,
   font-size: 6rem;
   line-height: 6.5rem;
   margin-bottom: 6rem;
+  @media screen and (max-width: $media-breakpoint-mobile) {
+    font-size: 4rem;
+    line-height: 6rem;
+    margin-bottom: 4rem;
+  }
 }
 
 h2,
@@ -56,6 +61,11 @@ h2,
   font-size: 5rem;
   line-height: 9.4rem;
   margin-bottom: 5rem;
+  @media screen and (max-width: $media-breakpoint-mobile) {
+    font-size: 4rem;
+    line-height: 6rem;
+    margin-bottom: 3rem;
+  }
 }
 
 h3,
@@ -63,6 +73,11 @@ h3,
   font-size: 4rem;
   line-height: 4.4rem;
   margin-bottom: 4rem;
+  @media screen and (max-width: $media-breakpoint-mobile) {
+    font-size: 3rem;
+    line-height: 5rem;
+    margin-bottom: 3rem;
+  }
 }
 
 h4,
@@ -78,6 +93,10 @@ h5,
   line-height: 2.9rem;
   margin-bottom: 2.5rem;
   letter-spacing: 0.8px;
+  @media screen and (max-width: $media-breakpoint-mobile) {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
 }
 
 h6,
@@ -94,7 +113,7 @@ body {
 }
 
 p {
-  font-size: 2.1rem;
+  font-size: 1.7rem;
   margin: 0 0 30px;
 }
 

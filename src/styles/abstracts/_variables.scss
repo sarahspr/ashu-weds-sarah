@@ -40,10 +40,12 @@ $bg-gradient-radial-primary: radial-gradient(circle, rgb(255, 249, 251) 31%, rgb
 
 // Borders
 $content-border: 1px solid $border-color-primary;
+
 // Spacing
 $default-margin: 4rem;
 $default-padding: 4rem;
-$content-max-width: 108rem;
+$content-max-width-desktop: 108rem;
+$content-max-width-tablet: 80%;
 
 /*
 ===============

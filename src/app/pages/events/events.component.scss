@@ -9,10 +9,10 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 5rem;
-    max-width: 75%;
+    max-width: $content-max-width;
     width: 100%;
   }
-  &__event-wrapper {
+  &__event-content-wrapper {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,9 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: $default-margin;
+    @media screen and (max-width: $media-breakpoint-tablet) {
+      flex-direction: column;
+    }
     .row {
       align-items: center;
       flex-direction: column;
@@ -58,14 +61,19 @@
       }
     }
   }
+
   &__event-image-wrapper {
     display: flex;
     height: auto;
     justify-content: center;
-    margin-bottom: $default-margin;
+    margin-bottom: 6rem;
     overflow: hidden;
-    max-width: $content-max-width;
-    @include content-image-shape(8px, 80px);
+    &:nth-child(odd) {
+      @include content-image-shape-right(8px, 80px);
+    }
+    &:nth-child(even) {
+      @include content-image-shape-left(8px, 80px);
+    }
 
     img {
       height: auto;
@@ -76,16 +84,31 @@
     display: flex;
     justify-content: space-between;
     margin: $default-margin 0;
+    @media screen and (max-width: $media-breakpoint-mobile) {
+      flex-direction: column;
+    }
   }
   &__event-ritual-wrapper {
     background-color: rgba($color-primary, 0.05);
-    @include content-image-shape(8px, 80px);
-
     display: flex;
     flex-direction: column;
-    max-width: 30%;
+    max-width: 48%;
     min-height: 34.4rem;
-    padding: $default-padding;
+    padding: 5rem 4rem;
+    width: 100%;
+    &:nth-child(odd) {
+      @include content-image-shape-left(8px, 80px);
+    }
+    &:nth-child(even) {
+      @include content-image-shape-right(8px, 80px);
+    }
+    @media screen and (max-width: $media-breakpoint-mobile) {
+      margin-bottom: 6rem;
+      max-width: 100%;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
     p {
       flex-grow: 1;
       margin-bottom: 0;

@@ -126,7 +126,7 @@ $ring-rotate-z: 33deg;
       overflow: hidden;
       padding: 5rem 1rem;
       width: 100%;
-      @include content-image-shape(8px, 120px);
+      @include content-image-shape-left(8px, 120px);
     }
 
     &__heading {

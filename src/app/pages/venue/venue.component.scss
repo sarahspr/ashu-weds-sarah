@@ -24,14 +24,14 @@
       background-repeat: no-repeat;
       background-size: cover;
 
-      @include content-image-shape(8px, 70px);
+      @include content-image-shape-left(8px, 70px);
     }
     &.col-2 {
       background-image: url('../../../assets/images/venue-2.jpeg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      @include content-image-shape(8px, 70px);
+      @include content-image-shape-left(8px, 70px);
     }
   }
 }

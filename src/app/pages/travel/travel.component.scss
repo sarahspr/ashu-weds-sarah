@@ -8,6 +8,6 @@
 
   &__image-wrapper {
     overflow: hidden;
-    @include content-image-shape(8px, 80px);
+    @include content-image-shape-left(8px, 80px);
   }
 }

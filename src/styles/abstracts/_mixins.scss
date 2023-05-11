@@ -1,11 +1,12 @@
 @import './variables';
 
-$media-breakpoint-tablet: 767px;
+$media-breakpoint-mobile: 767px;
+$media-breakpoint-tablet: 991px;
 $media-breakpoint-desktop: 1080px;
 
 // Mobile-first media queries
 @mixin breakpoint-tablet {
-  @media only screen and (min-width: $media-breakpoint-tablet) {
+  @media only screen and (min-width: $media-breakpoint-mobile) {
     @content;
   }
 }
@@ -16,7 +17,12 @@ $media-breakpoint-desktop: 1080px;
   }
 }
 
-@mixin content-image-shape($b-radius, $min-radius) {
+@mixin content-image-shape-left($b-radius, $min-radius) {
   border-radius: max(10%, $min-radius) $b-radius max(10%, $min-radius) $b-radius;
+  border: 0.2rem solid $color-primary;
+}
+
+@mixin content-image-shape-right($b-radius, $min-radius) {
+  border-radius: $b-radius max(10%, $min-radius) $b-radius max(10%, $min-radius);
   border: 0.2rem solid $color-primary;
 }

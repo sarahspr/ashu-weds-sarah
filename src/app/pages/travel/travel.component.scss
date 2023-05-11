@@ -1,6 +1,13 @@
+@import '../../../styles/abstracts/mixins';
+
 .travel-section {
   .grid {
     display: flex;
     justify-content: space-between;
+  }
+
+  &__image-wrapper {
+    overflow: hidden;
+    @include content-image-shape(8px, 80px);
   }
 }

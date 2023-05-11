@@ -18,6 +18,11 @@
     flex-direction: column;
     margin: $default-margin 0;
   }
+  &__event-header {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    text-align: center;
+  }
   &__event-description-wrapper {
     align-items: center;
     display: flex;
@@ -33,6 +38,15 @@
     }
     &.haldi {
       flex-direction: column;
+      li {
+        font-size: 2.4rem;
+        font-weight: bold;
+
+        p {
+          font-size: 2.1rem;
+          font-weight: 400;
+        }
+      }
     }
     &.wedding {
       flex-wrap: wrap;
@@ -49,8 +63,8 @@
     height: auto;
     justify-content: center;
     margin-bottom: $default-margin;
-    max-width: 60rem;
     overflow: hidden;
+    max-width: $content-max-width;
     @include content-image-shape(8px, 80px);
 
     img {

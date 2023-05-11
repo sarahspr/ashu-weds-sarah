@@ -1,6 +1,12 @@
-<app-side-nav></app-side-nav>
-<main class="main-wrapper">
-  <router-outlet></router-outlet>
-</main>
+<div class="app-main">
+  <app-side-nav *ngIf="(deviceType$ | async) === 'mobile'; else topNav"></app-side-nav>
+  <!--  Display this template only for tablet and desktop versions -->
+  <ng-template #topNav>
+    <app-top-nav></app-top-nav>
+  </ng-template>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
 
-<app-footer></app-footer>
+  <app-footer></app-footer>
+</div>

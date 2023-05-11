@@ -1,15 +1,55 @@
 @import './colors';
 
-// Colors
-$primary: $color-blue;
-$secondary: $color-pink;
-$homepage: $color-orange;
+/*
+===============
+COLORS
+===============
+*/
+// Color palette
+$color-blue: #006895;
+$color-black: #181818;
+$color-orange: #ffdd9b;
+$color-desert: #f9c55e;
+$color-pink: #ff9db4;
+$color-red: #fe7c9a;
+$color-yew: #fffaf0;
 
+// Color themes
+$color-primary: $color-pink;
+$color-secondary: $color-red;
+
+// Content colors
+$bg-color-primary: $color-red;
+$bg-color-secondary: $color-red;
+$border-color-primary: $color-primary;
+
+// Colors Homepage
+// TODO: Need to change variables dynamically
+$bg-color-homepage: $bg-color-primary;
+$bg-color-secondary-homepage: $bg-color-secondary;
+$border-color-homepage: $border-color-primary;
+
+// Colors travel
+$bg-color-travel: $bg-color-primary;
+$bg-color-secondary-travel: $bg-color-secondary;
+$border-color-travel: $border-color-primary;
+
+// Gradients
+// $bg-gradient-radial-primary: radial-gradient(circle, rgba(255, 253, 245, 1) 31%, rgba(255, 247, 236, 1) 100%);
+$bg-gradient-radial-primary: radial-gradient(circle, rgb(255, 249, 251) 31%, rgb(255, 247, 249) 100%);
+
+// Borders
+$content-border: 1px solid $border-color-primary;
 // Spacing
 $default-margin: 2rem;
 $default-padding: 2rem;
+$content-max-width: 1080px;
 
-// Fonts
+/*
+===============
+FONTS
+===============
+*/
 $font-brightwall-reg: 'Brightwall Regular';
 $font-brightwall-italic: 'Brightwall Italic';
 $font-brightwall-swash: 'Brightwall Swash';
@@ -17,3 +57,8 @@ $font-livvic-reg: 'Livvic Regular';
 $font-livvic-semibold: 'Livvic SemiBold';
 $font-livvic-bold: 'Livvic Bold';
 $font-livvic-black: 'Livvic Black';
+$font-pragati-narrow: 'Pragati Narrow';
+$font-pacifico: 'Pacifico';
+
+// TODO: create mixins, as we'd want to change border color on page transitions.
+$border-page: 1px solid $border-color-homepage;

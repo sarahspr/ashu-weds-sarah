@@ -2,6 +2,9 @@
 /* Order of import affects the styles */
 
 /* Abstracts */
+// variables should be at the top so that it can be used by other abstract files
+@import './abstracts/variables';
+@import './abstracts/animations';
 @import './abstracts/colors';
 @import './abstracts/grid';
 @import './abstracts/mixins';

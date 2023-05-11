@@ -1,6 +1,6 @@
 <a class="overlay" tabindex="-1" [ngClass]="{ visible: menuVisible }" (click)="onOverlayClick($event)"></a>
 <app-hamburger-icon class="side-nav__icon" (iconClicked)="onHamburgerIconClick($event)"></app-hamburger-icon>
 
-<app-hamburger-menu [isVisible]="menuVisible" class="side-nav__menu">
+<app-hamburger-menu [isVisible]="menuVisible" (onMenuHide)="menuVisible = false" class="side-nav__menu">
   <app-header></app-header>
 </app-hamburger-menu>

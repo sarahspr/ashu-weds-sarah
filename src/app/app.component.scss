@@ -1,0 +1,6 @@
+@import '../styles/abstracts/variables';
+
+.app-main {
+  border: 1rem solid $border-color-homepage;
+  background: $bg-gradient-radial-primary;
+}

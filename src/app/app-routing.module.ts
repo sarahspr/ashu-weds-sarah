@@ -5,6 +5,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { TravelComponent } from './pages/travel/travel.component';
 import { VenueComponent } from './pages/venue/venue.component';
 
+// TODO: Lazy load the page components.
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'events', component: EventsComponent },

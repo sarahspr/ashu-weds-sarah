@@ -1,5 +1,3 @@
-@import '../abstracts/variables';
-
 @font-face {
   font-family: 'Brightwall Regular';
   src: url('../../assets/fonts/brightwall-reg.otf') format('opentype');
@@ -12,22 +10,22 @@
   font-family: 'Brightwall Swash';
   src: url('../../assets/fonts/brightwall-swash.otf') format('opentype');
 }
-@font-face {
-  font-family: 'Livvic Regular';
-  src: url('../../assets/fonts/livvic-reg.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Livvic SemiBold';
-  src: url('../../assets/fonts/livvic-semibold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Livvic Bold';
-  src: url('../../assets/fonts/livvic-bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Livvic Black';
-  src: url('../../assets/fonts/livvic-black.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: 'Livvic Regular';
+//   src: url('../../assets/fonts/livvic-reg.ttf') format('truetype');
+// }
+// @font-face {
+//   font-family: 'Livvic SemiBold';
+//   src: url('../../assets/fonts/livvic-semibold.ttf') format('truetype');
+// }
+// @font-face {
+//   font-family: 'Livvic Bold';
+//   src: url('../../assets/fonts/livvic-bold.ttf') format('truetype');
+// }
+// @font-face {
+//   font-family: 'Livvic Black';
+//   src: url('../../assets/fonts/livvic-black.ttf') format('truetype');
+// }
 
 h1,
 .h1,
@@ -40,7 +38,7 @@ h4,
 h5,
 .h5 h6,
 .h6 {
-  font-family: $font-brightwall-reg, serif;
+  font-family: $font-brightwall-reg, sans-serif;
   font-weight: 100;
   letter-spacing: 1px;
   color: $color-black;
@@ -49,35 +47,35 @@ h5,
 h1,
 .h1 {
   font-size: 6rem;
-  line-height: 6rem;
+  line-height: 6.5rem;
   margin-bottom: 6rem;
 }
 
 h2,
 .h2 {
   font-size: 5rem;
-  line-height: 5.2rem;
+  line-height: 5.4rem;
   margin-bottom: 5rem;
 }
 
 h3,
 .h3 {
   font-size: 4rem;
-  line-height: 4.2rem;
+  line-height: 4.4rem;
   margin-bottom: 4rem;
 }
 
 h4,
 .h4 {
   font-size: 3rem;
-  line-height: 3.2rem;
+  line-height: 3.4rem;
   margin-bottom: 3rem;
 }
 
 h5,
 .h5 {
   font-size: 2.5rem;
-  line-height: 2.7rem;
+  line-height: 2.9rem;
   margin-bottom: 2.5rem;
   letter-spacing: 0.8px;
 }
@@ -85,17 +83,25 @@ h5,
 h6,
 .h6 {
   font-size: 2rem;
-  line-height: 2.2rem;
+  line-height: 2.4rem;
   margin-bottom: 2rem;
 }
 
 body {
-  font-family: $font-livvic-reg, sans-serif;
+  font-family: $font-pragati-narrow, sans-serif;
   font-size: 1.7rem;
   letter-spacing: 0.05rem;
-  line-height: 2rem;
 }
 
 p {
+  font-size: 2.1rem;
   margin: 0 0 30px;
+}
+
+.caption {
+  font-family: $font-pragati-narrow, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 5rem;
+  margin: 0 0.11rem 0.32rem;
 }

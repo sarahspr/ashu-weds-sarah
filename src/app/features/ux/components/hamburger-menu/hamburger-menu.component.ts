@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   imports: [CommonModule],
@@ -10,4 +10,11 @@ import { Component, Input } from '@angular/core';
 })
 export class HamburgerMenuComponent {
   @Input() isVisible: boolean = false;
+  @Output() onMenuHide: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
+
+  public onCloseButtonClick($event: MouseEvent): void {
+    $event.preventDefault();
+    this.isVisible = false;
+    this.onMenuHide.emit($event);
+  }
 }

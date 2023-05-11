@@ -1,0 +1,17 @@
+@import '../../../styles/abstracts/variables';
+
+.rsvp-container {
+  background-color: $color-primary;
+  margin: 3rem 0;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  width: 100%;
+
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: $content-max-width;
+    justify-content: center;
+  }
+}

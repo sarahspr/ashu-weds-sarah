@@ -1,23 +1,36 @@
 <div class="homepage">
   <section class="homepage__hero grid">
-    <div class="homepage__hero__rings-wrapper desktop">
-      <img class="icon-image icon-rings" src="/assets/images/icons/wedding-rings.png" alt="wedding rings" />
-    </div>
     <div class="homepage__hero__content-wrapper">
-      <div class="homepage__hero__heading-container">
+      <div class="homepage__hero__heading-container fade-in">
         <h1 class="homepage__hero__heading">Ashu</h1>
         <span class="h3">weds</span>
         <h1 class="homepage__hero__heading">Sarah</h1>
       </div>
-      <div class="homepage__hero__image-wrapper">
-        <img src="../../../assets/images/proposal.png" alt="proposal" />
-        <div class="homepage__hero__rings-wrapper mobile"><img src="../../../assets/images/icons/wedding-rings.png" alt="wedding rings" /></div>
+      <!-- Only display main image when device is not mobile  -->
+      <div class="homepage__hero__image-wrapper" *ngIf="(deviceType$ | async) != 'mobile'">
         <div class="homepage__hero__image-outline"></div>
+        <img src="./assets/images/proposal-1.png" alt="proposal" />
+        <div class="homepage__hero__rings-wrapper bounce">
+          <img src="./assets/images/icons/wedding-rings.png" alt="wedding rings" />
+        </div>
       </div>
     </div>
-    <!-- <h2 class="h5">November 4 - 5, 2023</h2> -->
   </section>
-  <section class="homepage__hero-lead">
-    <h2>We're Getting Married</h2>
+  <section class="homepage__getting-married">
+    <div class="homepage__getting-married__container">
+      <h2 class="homepage__getting-married__heading">We're Getting Married</h2>
+      <p class="caption">November 4 & 5, 2023</p>
+      <!-- <p class="typography-para-enhanced">Join the celebration as we say "I do" in the foothills of Himalayas.</p> -->
+    </div>
+  </section>
+  <section class="homepage__our-story">
+    <h2 class="homepage__our-story__heading">Our Story</h2>
+    <!-- <p class="typography-para-enhanced">
+      He thought she was cute. She thought he was ignoring her. She thought he was rude. They trained together. He proposed. She said yes!
+    </p> -->
+    <div class="homepage__our-story__content-wrapper"></div>
+  </section>
+  <section>
+    <app-rsvp-container></app-rsvp-container>
   </section>
 </div>

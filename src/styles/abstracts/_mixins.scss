@@ -1,0 +1,20 @@
+$media-breakpoint-tablet: 767px;
+$media-breakpoint-desktop: 1080px;
+
+// Mobile-first media queries
+@mixin breakpoint-tablet {
+  @media only screen and (min-width: $media-breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin breakpoint-desktop {
+  @media only screen and (min-width: $media-breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin content-image-shape($b-radius, $min-radius) {
+  border-radius: max(10%, $min-radius) $b-radius max(10%, $min-radius) $b-radius;
+  border: 0.2rem solid $color-primary;
+}

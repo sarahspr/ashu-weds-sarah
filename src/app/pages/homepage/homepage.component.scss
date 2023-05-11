@@ -1,52 +1,27 @@
 @import '../../../styles/abstracts/variables';
+@import '../../../styles/abstracts/mixins';
 
+$ring-rotate-z: 33deg;
 .homepage {
-  background-color: rgb(255, 253, 245);
-  background: radial-gradient(circle, rgba(255, 253, 245, 1) 31%, rgba(255, 247, 236, 1) 100%);
-
   &__hero {
     align-items: center;
-    // background: rgb(255, 253, 245);
-    // background: radial-gradient(circle, rgba(255, 253, 245, 1) 31%, rgba(255, 247, 236, 1) 100%);
-    border-top: 1rem solid $homepage;
-    border-right: 1rem solid $homepage;
-    border-left: 1rem solid $homepage;
     display: flex;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     position: relative;
     width: 100%;
     z-index: 1;
-    @media screen and (max-width: 768px) {
-      height: 100%;
-    }
 
     &__rings-wrapper {
-      position: absolute;
       height: 9rem;
+      left: 34.6rem;
+      opacity: 0;
+      position: absolute;
+      top: -6.9rem;
+      transform: rotateZ($ring-rotate-z);
       width: 9rem;
-      &.desktop {
-        bottom: 1rem;
-        left: 25rem;
-        @media screen and (max-width: 768px) {
-          display: none;
-          visibility: hidden;
-        }
-      }
-      &.mobile {
-        display: none;
-        top: -10.5rem;
-        visibility: hidden;
-        @media screen and (max-width: 768px) {
-          display: block;
-          visibility: visible;
-        }
-      }
-      @media screen and (max-width: 991px) {
-        left: 10rem;
-      }
-
       .icon-image {
-        opacity: 0.7;
+        opacity: 0.65;
       }
     }
 
@@ -66,75 +41,116 @@
       align-items: center;
       display: flex;
       flex-direction: column;
-      margin: 6rem 3rem 0 0;
-      @media screen and (max-width: 768px) {
-        height: 100%;
-        margin: 22rem 0 13rem;
+      margin: 22rem 0 19rem;
+
+      @include breakpoint-tablet {
+        flex-direction: column;
+        margin: 6rem 3rem 0 0;
       }
+
       span {
-        font-size: 8rem;
-        @media screen and (max-width: 991px) {
-          font-size: 7rem;
-        }
-        @media screen and (max-width: 768px) {
+        font-size: 7.3rem;
+
+        @include breakpoint-desktop {
           font-size: 8rem;
         }
       }
     }
     &__heading {
-      font-size: 12rem;
-      line-height: 12rem;
-      margin-bottom: 4rem;
-      @media screen and (max-width: 991px) {
+      font-size: 11rem;
+      line-height: 11rem;
+      margin-bottom: 5.5rem;
+
+      @include breakpoint-tablet {
         font-size: 10rem;
         line-height: 10rem;
-        margin-bottom: 3rem;
       }
-      @media screen and (max-width: 768px) {
+
+      @include breakpoint-desktop {
         font-size: 12rem;
         line-height: 12rem;
-        margin-bottom: 5.5rem;
       }
     }
     &__image-wrapper {
-      height: 50rem;
-      margin-left: 3rem;
+      display: none;
       position: relative;
-      width: 33rem;
-      @media screen and (max-width: 991px) {
-        height: 40rem;
-        width: 26rem;
+      width: 32rem;
+
+      @include breakpoint-tablet {
+        display: block;
+        margin-left: 6.5rem;
+        width: 31rem;
       }
-      @media screen and (max-width: 768px) {
-        margin-left: 0;
-        width: 33rem;
+
+      @include breakpoint-desktop {
+        margin-left: 11rem;
+        width: 38rem;
       }
+
       img {
         height: 100%;
-        width: auto;
-        @media screen and (max-width: 768px) {
-          height: auto;
-          width: 100%;
-        }
+        width: 100%;
       }
     }
     &__image-outline {
-      border: 0.3rem solid $homepage;
+      border: 0.3rem solid $border-color-homepage;
+      border-radius: 42% 4px 42% 42%;
       bottom: 2.5rem;
       left: 0;
       position: absolute;
       right: 0;
       top: 0;
-      transform: translate(3.5rem, -2.5rem);
+      transform: translate(1.8rem, 2rem);
       z-index: -1;
     }
   }
-  &__hero-lead {
+
+  &__getting-married {
+    align-items: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem 3rem;
     width: 100%;
-    h2 {
-      margin-bottom: 0;
+
+    &__container {
+      align-items: center;
+      background: url('/assets/images/she-said-yes-1.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      max-width: $content-max-width;
+      min-height: 90vh;
+      overflow: hidden;
+      padding: 5rem 1rem;
+      width: 100%;
+      @include content-image-shape(8px, 120px);
+    }
+
+    &__heading {
+      margin: 5rem;
+    }
+  }
+  &__our-story {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 4rem 1rem;
+    position: relative;
+    width: 100%;
+
+    &__heading {
+      margin: 5rem;
+    }
+
+    &__content-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      width: 50vw;
     }
   }
 }

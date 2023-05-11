@@ -10,7 +10,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  transition: opacity 0.26s ease-in-out 0.05s;
+  transition: visibility 1s, opacity 0.25s ease-in-out;
   width: 100vw;
   z-index: 2;
 

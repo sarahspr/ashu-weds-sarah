@@ -1,3 +1,4 @@
+@import '../abstracts/variables';
 *,
 *::before,
 *::after {
@@ -46,13 +47,19 @@ article ul {
   list-style-position: inside;
 }
 
-// a {
-//   /* Places underlines below the descenders */
-//   text-underline-position: under;
+a {
+  color: $color-black;
+  text-decoration: none;
+  &:visited,
+  &:active {
+    color: $color-black;
+  }
+  // /* Places underlines below the descenders */
+  // text-underline-position: under;
 
-//   /* Sets the thickness as a percentage of the font size */
-//   text-decoration-thickness: 8;
-// }
+  // /* Sets the thickness as a percentage of the font size */
+  // text-decoration-thickness: 8;
+}
 
 label,
 button,

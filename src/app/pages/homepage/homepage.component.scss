@@ -121,7 +121,7 @@ $ring-rotate-z: 33deg;
       display: flex;
       flex-direction: column;
       height: 100%;
-      max-width: $content-max-width;
+      max-width: $content-max-width-desktop;
       min-height: 90vh;
       overflow: hidden;
       padding: 5rem 1rem;
@@ -148,9 +148,18 @@ $ring-rotate-z: 33deg;
 
     &__content-wrapper {
       display: flex;
-      flex-direction: column;
       margin-top: 2rem;
-      width: 50vw;
+      width: 100%;
+      .column {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 48%;
+        width: 100%;
+      }
     }
+  }
+  .icon-container {
+    font-size: 25px;
   }
 }

@@ -137,6 +137,8 @@ $ring-rotate-z: 33deg;
     align-items: center;
     display: flex;
     flex-direction: column;
+    max-width: $content-max-width-desktop;
+    margin: 0 auto;
     min-height: 100vh;
     padding: 4rem 1rem;
     position: relative;

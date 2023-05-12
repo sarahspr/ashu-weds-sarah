@@ -5,10 +5,13 @@
   flex-direction: column;
   &__description-wrapper {
     margin-bottom: 10rem;
-    max-width: 75%;
+    max-width: $content-max-width-desktop;
     p {
       text-align: center;
     }
+  }
+  .venue-contact-wrapper {
+    display: flex;
   }
   &__images-container {
     display: flex;

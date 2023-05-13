@@ -150,6 +150,7 @@ $ring-rotate-z: 33deg;
 
     &__content-wrapper {
       display: flex;
+      justify-content: space-between;
       margin-top: 2rem;
       width: 100%;
       .column {
@@ -163,5 +164,9 @@ $ring-rotate-z: 33deg;
   }
   .icon-container {
     font-size: 25px;
+  }
+  #rsvp-section,
+  #photos-section {
+    scroll-margin-top: 6rem;
   }
 }

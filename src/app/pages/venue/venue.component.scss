@@ -10,8 +10,16 @@
       text-align: center;
     }
   }
-  .venue-contact-wrapper {
+  &__contact-wrapper {
+    align-items: center;
     display: flex;
+    flex-direction: column;
+  }
+  &__address,
+  &__phone {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
   &__images-container {
     display: flex;
@@ -36,5 +44,12 @@
       background-size: cover;
       @include content-image-shape-left(8px, 70px);
     }
+  }
+
+  &__venue-travel {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: $content-max-width-desktop;
   }
 }

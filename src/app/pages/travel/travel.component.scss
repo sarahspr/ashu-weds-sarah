@@ -3,27 +3,82 @@
 
 .travel-section {
   flex-direction: column;
+  margin-bottom: 6rem;
   max-width: $content-max-width-desktop;
-  .grid {
+  @media screen and (max-width: $media-breakpoint-desktop) {
+    max-width: $content-max-width-tablet;
+  }
+  &__intro {
     display: flex;
     justify-content: space-between;
   }
-  &__image-wrapper {
-    overflow: hidden;
+  &__intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 48%;
+    @media screen and (max-width: $media-breakpoint-mobile) {
+      align-items: center;
+      max-width: 100%;
+    }
+  }
+  &__image-wrapper-desktop {
     @include content-image-shape-left(8px, 80px);
+    max-width: 48%;
+    overflow: hidden;
+    img {
+      height: 100%;
+    }
+    @media screen and (max-width: $media-breakpoint-mobile) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  &__image-wrapper-mobile {
+    @include content-image-shape-left(8px, 80px);
+    display: none;
+    margin-bottom: 6rem;
+    max-width: 60%;
+    overflow: hidden;
+    visibility: hidden;
+    @media screen and (max-width: $media-breakpoint-mobile) {
+      display: block;
+      visibility: visible;
+    }
+  }
+  &__passport {
+    margin-top: 6rem;
   }
   &__visa {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 6rem;
     .visa-images-wrapper {
       display: flex;
       justify-content: center;
+      @media screen and (max-width: $media-breakpoint-mobile-small) {
+        align-items: center;
+        flex-direction: column;
+      }
     }
     .visa-image-container {
       max-width: 25%;
+      @media screen and (max-width: $media-breakpoint-tablet) {
+        max-width: 35%;
+      }
+      @media screen and (max-width: $media-breakpoint-mobile) {
+        max-width: 45%;
+      }
+      @media screen and (max-width: $media-breakpoint-mobile-small) {
+        margin-bottom: 3rem;
+        max-width: 60%;
+      }
       &:first-of-type {
         margin-right: 6rem;
+        @media screen and (max-width: $media-breakpoint-mobile-small) {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -31,13 +86,13 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-top: 6rem;
   }
   &__hotels {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
+    margin-top: 6rem;
   }
   &__hotels-wrapper {
     display: flex;

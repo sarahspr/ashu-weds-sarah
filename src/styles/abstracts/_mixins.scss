@@ -23,3 +23,8 @@
   border-radius: $b-radius max(10%, $min-radius) $b-radius max(10%, $min-radius);
   border: 0.2rem solid $color-primary;
 }
+
+@mixin content-semi-circle-left($b-radius, $min-radius) {
+  border-radius: max(10%, $min-radius) $b-radius max(10%, $min-radius) max(10%, $min-radius);
+  border: 0.26rem solid $color-primary;
+}

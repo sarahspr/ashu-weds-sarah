@@ -9,7 +9,10 @@
       <!-- Only display main image when device is not mobile  -->
       <div class="homepage__hero__image-wrapper" *ngIf="(deviceType$ | async) != 'mobile'">
         <div class="homepage__hero__image-outline"></div>
-        <img src="./assets/images/proposal-1.png" alt="proposal" />
+        <div class="homepage__hero__image-container">
+          <img src="./assets/images/proposal-1.png" alt="proposal" />
+        </div>
+
         <div class="homepage__hero__rings-wrapper bounce">
           <img src="./assets/images/icons/wedding-rings.png" alt="wedding rings" />
         </div>

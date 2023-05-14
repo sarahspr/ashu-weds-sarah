@@ -1,3 +1,5 @@
+@import './colors';
+
 /*
 ===============
 COLORS
@@ -33,7 +35,6 @@ $bg-color-primary: $color-teal--light;
 $bg-color-secondary: $color-teal;
 
 // Borders
-$content-border: 1px solid $border-color-primary;
 $border-color-primary: $bg-color-secondary;
 $border-color-secondary: $color-tertiary;
 
@@ -49,6 +50,9 @@ $border-color-travel: $border-color-primary;
 
 // Gradients
 $bg-gradient-primary: linear-gradient(174deg, $bg-color-primary 25%, $bg-color-secondary 83%);
+
+// Borders
+$content-border: 1px solid $border-color-primary;
 
 // Shadows
 $button-shadow: 0 0 $color-secondary, 0 0 $color-secondary, 0 4px 6px -1px $color-primary--a1,
@@ -68,13 +72,12 @@ FONTS
 $font-brightwall-reg: 'Brightwall Regular';
 $font-brightwall-italic: 'Brightwall Italic';
 $font-brightwall-swash: 'Brightwall Swash';
-$font-quicksand: 'Quicksand';
-
-// Font Weights
-$light: 300;
-$regular: 400;
-$semi-bold: 500;
-$bold: 600;
+$font-livvic-reg: 'Livvic Regular';
+$font-livvic-semibold: 'Livvic SemiBold';
+$font-livvic-bold: 'Livvic Bold';
+$font-livvic-black: 'Livvic Black';
+$font-pragati-narrow: 'Pragati Narrow';
+$font-pacifico: 'Pacifico';
 
 // TODO: create mixins, as we'd want to change border color on page transitions.
 $border-page: 1px solid $border-color-primary;

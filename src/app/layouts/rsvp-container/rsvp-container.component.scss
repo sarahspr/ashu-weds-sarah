@@ -28,9 +28,14 @@
   box-shadow: $button-shadow;
   color: $color-yew;
   display: flex;
+  font-size: 1.7rem;
   letter-spacing: 0.13rem;
   padding: 0.4rem 3.2rem;
-  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+  &:hover,
+  &:active {
+    background-color: $color-dark-pink;
+  }
 }
 
 .rsvp-icon-container {

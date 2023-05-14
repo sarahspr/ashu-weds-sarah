@@ -3,9 +3,16 @@
 
 .venue-section {
   flex-direction: column;
+  max-width: $content-max-width-desktop;
+  @media screen and (max-width: $media-breakpoint-desktop) {
+    max-width: $content-max-width-tablet;
+  }
+  h1,
+  h2 {
+    text-align: center;
+  }
   &__description-wrapper {
     margin-bottom: 10rem;
-    max-width: $content-max-width-desktop;
     p {
       text-align: center;
     }
@@ -14,6 +21,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
   }
   &__address,
   &__phone {
@@ -24,11 +32,20 @@
   &__images-container {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: $media-breakpoint-tablet) {
+      flex-direction: column;
+    }
   }
   &__image-wrapper {
     height: 40rem;
     max-width: 48%;
     width: 100%;
+    @media screen and (max-width: $media-breakpoint-tablet) {
+      max-width: 100%;
+      &:first-of-type {
+        margin-bottom: 3rem;
+      }
+    }
     &.col-1 {
       background-image: url('../../../assets/images/venue-1.jpeg');
       background-position: center;
@@ -50,6 +67,12 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10rem;
     max-width: $content-max-width-desktop;
+    p {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 }

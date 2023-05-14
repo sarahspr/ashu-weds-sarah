@@ -36,8 +36,7 @@ h3,
 h4,
 .h4,
 h5,
-.h5 h6,
-.h6 {
+.h5 {
   font-family: $font-brightwall-reg, sans-serif;
   font-weight: 100;
   letter-spacing: 1px;
@@ -105,9 +104,13 @@ h5,
 
 h6,
 .h6 {
+  font-family: $font-pragati-narrow, sans-serif;
   font-size: 2rem;
-  line-height: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 2.2rem;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 body {

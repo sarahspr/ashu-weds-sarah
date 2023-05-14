@@ -1,0 +1,6 @@
+<div class="rsvp-dialog" [ngClass]="{ 'rsvp-dialog--hidden': dialogHidden }" role="dialog">
+  <a class="rsvp-dialog__close-button" href="#" (click)="onDialogCloseClick($event)">
+    <img src="/assets/images/icons/x-thin.svg" />
+  </a>
+  <div #rsvpFormContainer class="rsvp-dialog__form-container"></div>
+</div>

@@ -8,7 +8,7 @@
   min-height: 95vh;
   padding: 5rem 1rem;
   width: 300px;
-  background-color: $color-secondary;
+  background-color: $bg-color-secondary;
 
   &--horizontal {
     align-items: center;
@@ -27,8 +27,8 @@
     }
 
     .site-header__nav-link {
-      margin: 0.25rem 1rem;
-      padding: 1rem 1.12rem;
+      margin: 0.25rem 0.3rem;
+      padding: 1.5rem 1.5rem;
     }
   }
 
@@ -54,9 +54,8 @@
     color: $color-black;
     font-size: 1.7rem;
     font-weight: $semi-bold;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 1.5rem;
     margin-top: 1.4rem;
-    // max-width: 240px;
     text-decoration: none;
 
     @include breakpoint-tablet() {

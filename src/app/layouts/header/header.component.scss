@@ -52,11 +52,11 @@
   &__nav-link {
     border-radius: 20px 4px 20px 4px;
     color: $color-black;
-    font-size: 1.76rem;
-    font-weight: 600;
+    font-size: 1.7rem;
+    font-weight: $semi-bold;
     padding: 1rem 1.5rem;
     margin-top: 1.4rem;
-    max-width: 240px;
+    // max-width: 240px;
     text-decoration: none;
 
     @include breakpoint-tablet() {

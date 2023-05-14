@@ -72,12 +72,13 @@ FONTS
 $font-brightwall-reg: 'Brightwall Regular';
 $font-brightwall-italic: 'Brightwall Italic';
 $font-brightwall-swash: 'Brightwall Swash';
-$font-livvic-reg: 'Livvic Regular';
-$font-livvic-semibold: 'Livvic SemiBold';
-$font-livvic-bold: 'Livvic Bold';
-$font-livvic-black: 'Livvic Black';
-$font-pragati-narrow: 'Pragati Narrow';
-$font-pacifico: 'Pacifico';
+$font-quicksand: 'Quicksand';
+
+// Font Weights
+$light: 300;
+$regular: 400;
+$semi-bold: 500;
+$bold: 700;
 
 // TODO: create mixins, as we'd want to change border color on page transitions.
 $border-page: 1px solid $border-color-primary;

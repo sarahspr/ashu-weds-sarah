@@ -15,9 +15,9 @@ $color-pink--light: rgb(255, 247, 249);
 $color-pink: #ff9db4;
 $color-dark-pink: #df899e;
 $color-red: #fe7c9a;
-$color-teal: rgb(209, 248, 255);
+$color-teal: rgb(207, 247, 254);
 $color-teal--a01: rgba(209, 248, 255, 0.1);
-$color-teal--light: rgba(249, 254, 255, 1);
+$color-teal--light: rgb(244, 253, 255);
 $color-teal--dark: rgb(194, 243, 251);
 $color-yew: #fffaf0;
 
@@ -32,7 +32,7 @@ $bg-color-primary: $color-teal--light;
 $bg-color-secondary: $color-teal;
 
 // Borders
-$border-color-primary: $color-primary;
+$border-color-primary: $bg-color-secondary;
 
 // Colors Homepage
 // TODO: Need to change variables dynamically

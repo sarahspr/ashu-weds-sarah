@@ -20,8 +20,27 @@
 }
 
 .card {
-  border-radius: 36px;
+  border-radius: 3.6rem;
   overflow: hidden;
+}
+
+.button {
+  align-items: center;
+  background-color: $color-pink;
+  border: 1px solid $color-smoke;
+  border-radius: 0.6rem;
+  box-shadow: $button-shadow;
+  color: $color-yew !important;
+  display: flex;
+  font-size: 1.7rem;
+  justify-content: center;
+  letter-spacing: 0.13rem;
+  padding: 0.4rem 3.2rem;
+  transition: all 0.2s ease-in-out;
+  &:hover,
+  &:active {
+    background-color: $color-dark-pink;
+  }
 }
 
 .row {

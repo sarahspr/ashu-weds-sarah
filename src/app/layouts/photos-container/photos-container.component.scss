@@ -36,6 +36,11 @@
       grid-row-end: 6;
     }
   }
+
+  &__gallery-item {
+    border-radius: 1.5rem;
+    overflow: hidden;
+  }
   .gallery-item-4 {
     grid-column-start: 7;
     grid-column-end: 14;

@@ -41,6 +41,11 @@
   &:active {
     background-color: $color-secondary;
   }
+
+  &--secondary {
+    background-color: $bg-color-primary;
+    border: 1px solid $color-tertiary;
+  }
 }
 
 .default-padding {

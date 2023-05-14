@@ -35,7 +35,7 @@
   justify-content: center;
   letter-spacing: 0.13rem;
   min-width: 15rem;
-  padding: 0.7rem 3.2rem;
+  padding: 1.2rem 3.2rem;
   transition: all 0.2s ease-in-out;
   &:hover,
   &:active {
@@ -45,6 +45,11 @@
   &--secondary {
     background-color: $bg-color-primary;
     border: 1px solid $color-tertiary;
+
+    &:hover,
+    &:active {
+      background-color: $bg-color-secondary;
+    }
   }
 }
 

@@ -16,15 +16,18 @@ $color-pink: #ff9db4;
 $color-dark-pink: #df899e;
 $color-red: #fe7c9a;
 $color-teal: rgb(207, 247, 254);
-$color-teal--a01: rgba(209, 248, 255, 0.1);
+$color-teal--a01: rgba(209, 248, 255, 0.3);
 $color-teal--light: rgb(244, 253, 255);
-$color-teal--dark: rgb(194, 243, 251);
+$color-teal--dark: rgb(177, 241, 251);
 $color-yew: #fffaf0;
 
 // Color themes
 $color-primary: $color-teal;
+// Muted rabga() with a value of `a` version of primary
 $color-primary--a1: $color-teal--a01;
+// Secondary color: Lighter version of primary color
 $color-secondary: $color-teal--light;
+// Darker version of primary color
 $color-tertiary: $color-teal--dark;
 
 // Content colors
@@ -33,12 +36,12 @@ $bg-color-secondary: $color-teal;
 
 // Borders
 $border-color-primary: $bg-color-secondary;
+$border-color-secondary: $color-tertiary;
 
 // Colors Homepage
 // TODO: Need to change variables dynamically
 $bg-color-homepage: $bg-color-primary;
 $bg-color-secondary-homepage: $bg-color-secondary;
-$border-color-homepage: $border-color-primary;
 
 // Colors travel
 $bg-color-travel: $bg-color-primary;
@@ -46,8 +49,7 @@ $bg-color-secondary-travel: $bg-color-secondary;
 $border-color-travel: $border-color-primary;
 
 // Gradients
-// $bg-gradient-radial-primary: radial-gradient(circle, rgba(255, 253, 245, 1) 31%, rgba(255, 247, 236, 1) 100%);
-$bg-gradient-radial-primary: linear-gradient(174, $bg-color-primary 25%, $bg-color-secondary 83%);
+$bg-gradient-primary: linear-gradient(174deg, $bg-color-primary 25%, $bg-color-secondary 83%);
 
 // Borders
 $content-border: 1px solid $border-color-primary;
@@ -78,4 +80,4 @@ $font-pragati-narrow: 'Pragati Narrow';
 $font-pacifico: 'Pacifico';
 
 // TODO: create mixins, as we'd want to change border color on page transitions.
-$border-page: 1px solid $border-color-homepage;
+$border-page: 1px solid $border-color-primary;

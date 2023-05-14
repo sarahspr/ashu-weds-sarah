@@ -90,9 +90,9 @@ SCROLLBAR
   width: 6px !important;
 }
 ::-webkit-scrollbar-track {
-  background: $border-color-homepage;
+  background: $border-color-primary;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 16px !important;
-  background: $bg-color-secondary-homepage;
+  background: $border-color-secondary;
 }

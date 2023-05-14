@@ -10,19 +10,14 @@ $color-blue: #006895;
 $color-black: #181818;
 $color-smoke: rgba(0, 0, 0, 0.2);
 $color-orange-light: #fff6f4;
-// $color-orange: #ffdd9b;
-// $color-desert: #f9c55e;
-// $color-pink--light: rgb(255, 247, 249);
 $color-pink-light: #fcf4ff;
-// $color-pink: #ff9db4;
 $color-dark-pink: #df899e;
-// $color-red: #fe7c9a;
 $color-light-green: #f8fff4;
 $color-teal: rgb(207, 247, 254);
 $color-teal--a01: rgba(209, 248, 255, 0.3);
 $color-teal--a02: rgba(138, 230, 246, 0.5);
 $color-teal--light: rgb(244, 253, 255);
-$color-teal--dark: rgb(177, 241, 251);
+$color-teal--dark: rgb(174, 244, 255);
 $color-yew: #fffaf0;
 
 // Color themes
@@ -36,8 +31,9 @@ $color-secondary: $color-teal--light;
 $color-tertiary: $color-teal--dark;
 
 // Content colors
-$bg-color-primary: $color-teal--light;
-$bg-color-secondary: $color-teal;
+$bg-color-primary: $color-secondary;
+$bg-color-secondary: $color-primary;
+$bg-color-tertiary: $color-tertiary;
 
 // Borders
 $border-color-primary: $bg-color-secondary;

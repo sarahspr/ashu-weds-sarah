@@ -25,21 +25,21 @@
 }
 
 .button {
+  @include content-image-shape-left(0.2rem, 2rem);
   align-items: center;
-  background-color: $color-pink;
-  border: 1px solid $color-smoke;
-  border-radius: 0.6rem;
+  background-color: $color-primary;
+  border: 1px solid $color-tertiary;
   box-shadow: $button-shadow;
-  color: $color-yew !important;
   display: flex;
-  font-size: 1.7rem;
+  font-size: 1.75rem;
   justify-content: center;
   letter-spacing: 0.13rem;
-  padding: 0.4rem 3.2rem;
+  min-width: 15rem;
+  padding: 0.7rem 3.2rem;
   transition: all 0.2s ease-in-out;
   &:hover,
   &:active {
-    background-color: $color-dark-pink;
+    background-color: $color-secondary;
   }
 }
 

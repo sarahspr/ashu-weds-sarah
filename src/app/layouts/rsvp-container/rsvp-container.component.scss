@@ -3,11 +3,11 @@
 
 .rsvp-container {
   align-items: center;
+  background-color: $bg-color-primary;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // min-height: 33vh;
-  padding: $default-padding;
+  padding: 10rem 1.2rem;
   text-align: center;
   width: 100%;
 }

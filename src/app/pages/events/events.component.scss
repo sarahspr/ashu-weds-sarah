@@ -39,7 +39,7 @@
   &__event-description-wrapper {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: $default-margin;
     @media screen and (max-width: $media-breakpoint-tablet) {
       flex-direction: column;

@@ -10,22 +10,6 @@
   font-family: 'Brightwall Swash';
   src: url('../../assets/fonts/brightwall-swash.otf') format('opentype');
 }
-// @font-face {
-//   font-family: 'Livvic Regular';
-//   src: url('../../assets/fonts/livvic-reg.ttf') format('truetype');
-// }
-// @font-face {
-//   font-family: 'Livvic SemiBold';
-//   src: url('../../assets/fonts/livvic-semibold.ttf') format('truetype');
-// }
-// @font-face {
-//   font-family: 'Livvic Bold';
-//   src: url('../../assets/fonts/livvic-bold.ttf') format('truetype');
-// }
-// @font-face {
-//   font-family: 'Livvic Black';
-//   src: url('../../assets/fonts/livvic-black.ttf') format('truetype');
-// }
 
 h1,
 .h1,
@@ -105,7 +89,7 @@ h5,
 
 h6,
 .h6 {
-  font-family: $font-pragati-narrow, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -115,12 +99,13 @@ h6,
 }
 
 body {
-  font-family: $font-pragati-narrow, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.7rem;
-  letter-spacing: 0.05rem;
 }
 
 p {
   font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.2rem;
   margin: 0 0 30px;
 }

@@ -109,8 +109,10 @@ $ring-rotate-z: 33deg;
     align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 3rem auto $default-margin;
     min-height: 100vh;
-    padding: 2rem 3rem;
+    padding: $default-padding;
     width: 100%;
 
     &__container {
@@ -138,9 +140,9 @@ $ring-rotate-z: 33deg;
     display: flex;
     flex-direction: column;
     max-width: $content-max-width-desktop;
-    margin: 0 auto;
+    margin: $default-margin auto;
     min-height: 100vh;
-    padding: 4rem 1rem;
+    padding: $default-padding;
     position: relative;
     width: 100%;
 
@@ -159,6 +161,11 @@ $ring-rotate-z: 33deg;
         flex-direction: column;
         max-width: 48%;
         width: 100%;
+        p {
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }
@@ -167,6 +174,7 @@ $ring-rotate-z: 33deg;
   }
   #rsvp-section,
   #photos-section {
+    margin: $default-margin auto;
     scroll-margin-top: 6rem;
   }
 }

@@ -43,6 +43,13 @@
   }
 }
 
+.default-padding {
+  padding: $default-padding;
+  @media screen and (max-width: $media-breakpoint-mobile) {
+    padding: 1rem;
+  }
+}
+
 .row {
   display: flex;
   width: 100%;

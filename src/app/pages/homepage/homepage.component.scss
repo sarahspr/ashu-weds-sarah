@@ -1,5 +1,6 @@
 @import '../../../styles/abstracts/variables';
 @import '../../../styles/abstracts/mixins';
+@import '../../../styles/base/breakpoints';
 
 $ring-rotate-z: 33deg;
 .homepage {
@@ -157,12 +158,21 @@ $ring-rotate-z: 33deg;
       justify-content: space-between;
       margin-top: 2rem;
       width: 100%;
+      @media screen and (max-width: $media-breakpoint-mobile) {
+        flex-direction: column;
+      }
       .column {
         align-items: center;
         display: flex;
         flex-direction: column;
         max-width: 48%;
         width: 100%;
+        @media screen and (max-width: $media-breakpoint-mobile) {
+          max-width: 100%;
+          &:first-of-type {
+            margin-bottom: $default-margin;
+          }
+        }
         p {
           &:last-of-type {
             margin-bottom: 0;

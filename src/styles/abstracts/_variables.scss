@@ -11,18 +11,27 @@ $color-black: #181818;
 $color-smoke: rgba(0, 0, 0, 0.2);
 $color-orange: #ffdd9b;
 $color-desert: #f9c55e;
+$color-pink--light: rgb(255, 247, 249);
 $color-pink: #ff9db4;
 $color-dark-pink: #df899e;
 $color-red: #fe7c9a;
+$color-teal: rgb(209, 248, 255);
+$color-teal--a01: rgba(209, 248, 255, 0.1);
+$color-teal--light: rgba(249, 254, 255, 1);
+$color-teal--dark: rgb(194, 243, 251);
 $color-yew: #fffaf0;
 
 // Color themes
-$color-primary: $color-pink;
-$color-secondary: $color-red;
+$color-primary: $color-teal;
+$color-primary--a1: $color-teal--a01;
+$color-secondary: $color-teal--light;
+$color-tertiary: $color-teal--dark;
 
 // Content colors
-$bg-color-primary: $color-red;
-$bg-color-secondary: $color-red;
+$bg-color-primary: $color-teal--light;
+$bg-color-secondary: $color-teal;
+
+// Borders
 $border-color-primary: $color-primary;
 
 // Colors Homepage
@@ -38,13 +47,14 @@ $border-color-travel: $border-color-primary;
 
 // Gradients
 // $bg-gradient-radial-primary: radial-gradient(circle, rgba(255, 253, 245, 1) 31%, rgba(255, 247, 236, 1) 100%);
-$bg-gradient-radial-primary: radial-gradient(circle, rgb(255, 249, 251) 31%, rgb(255, 247, 249) 100%);
+$bg-gradient-radial-primary: linear-gradient(174, $bg-color-primary 25%, $bg-color-secondary 83%);
 
 // Borders
 $content-border: 1px solid $border-color-primary;
 
 // Shadows
-$button-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+$button-shadow: 0 0 $color-secondary, 0 0 $color-secondary, 0 4px 6px -1px $color-primary--a1,
+  0 2px 4px -2px $color-primary--a1;
 
 // Spacing
 $default-margin: 6rem;

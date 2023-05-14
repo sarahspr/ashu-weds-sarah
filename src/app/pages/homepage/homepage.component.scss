@@ -72,12 +72,10 @@ $ring-rotate-z: 33deg;
       }
     }
     &__image-wrapper {
-      display: none;
       position: relative;
       width: 32rem;
 
       @include breakpoint-tablet {
-        display: block;
         margin-left: 6.5rem;
         width: 31rem;
       }
@@ -86,15 +84,19 @@ $ring-rotate-z: 33deg;
         margin-left: 11rem;
         width: 38rem;
       }
+    }
 
+    &__image-container {
+      overflow: hidden;
+      @include content-semi-circle-left(8px, 370px);
       img {
         height: 100%;
         width: 100%;
       }
     }
     &__image-outline {
-      border: 0.3rem solid $border-color-homepage;
-      border-radius: 42% 4px 42% 42%;
+      @include content-semi-circle-left(8px, 370px);
+
       bottom: 2.5rem;
       left: 0;
       position: absolute;
@@ -128,7 +130,7 @@ $ring-rotate-z: 33deg;
       overflow: hidden;
       padding: 5rem 1rem;
       width: 100%;
-      @include content-image-shape-left(8px, 120px);
+      @include content-image-shape-left(8px, 140px);
     }
 
     &__heading {

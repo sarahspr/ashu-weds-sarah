@@ -1,4 +1,5 @@
 @import '../../../styles/abstracts/variables';
+@import '../../../styles/abstracts/mixins';
 
 .site-footer {
   background-color: $color-pink;
@@ -7,10 +8,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem 0.4rem 0.3rem;
+    padding: $default-padding;
     p {
       display: block;
       margin-bottom: 0;
+      @media screen and (max-width: $media-breakpoint-mobile-small) {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }

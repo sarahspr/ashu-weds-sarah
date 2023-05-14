@@ -8,6 +8,7 @@ COLORS
 // Color palette
 $color-blue: #006895;
 $color-black: #181818;
+$color-smoke: rgba(0, 0, 0, 0.2);
 $color-orange: #ffdd9b;
 $color-desert: #f9c55e;
 $color-pink: #ff9db4;
@@ -40,6 +41,9 @@ $bg-gradient-radial-primary: radial-gradient(circle, rgb(255, 249, 251) 31%, rgb
 
 // Borders
 $content-border: 1px solid $border-color-primary;
+
+// Shadows
+$button-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 
 // Spacing
 $default-margin: 6rem;

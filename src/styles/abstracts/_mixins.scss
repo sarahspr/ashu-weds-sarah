@@ -58,14 +58,7 @@
 
 // Color mixins
 @mixin set-base-color($color-mode) {
-  // Background colors
-  --bg-color-primary: var(--color-secondary);
-  --bg-color-secondary: var(--color-primary);
-  --bg-color-tertiary: var(--color-tertiary);
-  // Border colors
-  --border-color-primary: var(--color-primary);
-  --border-color-secondary: var(--color-tertiary);
-
+  // Update base colors
   @if $color-mode == 'snow' {
     @include color-teal;
   } @else if $color-mode == 'earth' {
@@ -77,4 +70,12 @@
   } @else {
     @include color-teal;
   }
+
+  // Background colors
+  --bg-color-primary: var(--color-secondary);
+  --bg-color-secondary: var(--color-primary);
+  --bg-color-tertiary: var(--color-tertiary);
+  // Border colors
+  --border-color-primary: var(--color-primary);
+  --border-color-secondary: var(--color-tertiary);
 }

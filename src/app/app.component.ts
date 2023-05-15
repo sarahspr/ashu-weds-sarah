@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable, take } from 'rxjs';
+import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Observable } from 'rxjs';
 
 import { Device } from './core/models/device.interface';
 import { DeviceDetectorService } from './core/services/device-detector.service';
-import { NavigationEnd, NavigationStart, Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,9 +12,12 @@ import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   public deviceType$: Observable<Device> = this.deviceDetectorService.deviceType$;
-  public pageClass: string = 'homepage';
 
-  constructor(private deviceDetectorService: DeviceDetectorService, private router: Router) {}
+  constructor(
+    private deviceDetectorService: DeviceDetectorService,
+    private router: Router,
+    private renderer: Renderer2
+  ) {}
 
   ngOnInit(): void {
     this.deviceDetectorService.init();
@@ -24,7 +27,8 @@ export class AppComponent implements OnInit {
   private initRouteChangeEvent() {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.pageClass = this.getPageClass(event);
+        const pageClass = this.getPageClass(event);
+        this.renderer.setAttribute(document.body, 'data-page', pageClass);
       }
     });
   }

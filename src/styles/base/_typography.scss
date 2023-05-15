@@ -23,7 +23,7 @@ h5,
 .h5 {
   font-family: $font-brightwall-reg, sans-serif;
   font-weight: 100;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   color: $color-black;
 }
 
@@ -80,7 +80,7 @@ h5,
   font-size: 2.5rem;
   line-height: 5.5rem;
   margin-bottom: 2.5rem;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.08rem;
   @media screen and (max-width: $media-breakpoint-mobile) {
     font-size: 2rem;
     line-height: 4.4rem;
@@ -107,5 +107,5 @@ body {
 
 p {
   font-size: 1.7rem;
-  margin: 0 0 30px;
+  margin: 0 0 3rem;
 }

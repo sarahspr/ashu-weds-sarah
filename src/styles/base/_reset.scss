@@ -84,12 +84,12 @@ SCROLLBAR
 ==============================
 */
 ::-webkit-scrollbar {
-  width: 6px !important;
+  width: 0.6rem !important;
 }
 ::-webkit-scrollbar-track {
   background: var(--border-color-primary);
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 16px !important;
+  border-radius: 1.6rem !important;
   background: var(--border-color-secondary);
 }

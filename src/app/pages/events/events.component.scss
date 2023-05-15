@@ -83,10 +83,10 @@
     margin-bottom: 6rem;
     overflow: hidden;
     &:nth-child(odd) {
-      @include content-image-shape-right(8px, 80px);
+      @include content-image-shape-right(0.8rem, 8rem);
     }
     &:nth-child(even) {
-      @include content-image-shape-left(8px, 80px);
+      @include content-image-shape-left(0.8rem, 1.8rem);
     }
 
     img {
@@ -111,10 +111,10 @@
     padding: 5rem 4rem;
     width: 100%;
     &:nth-child(odd) {
-      @include content-image-shape-left(8px, 80px);
+      @include content-image-shape-left(0.8rem, 8rem);
     }
     &:nth-child(even) {
-      @include content-image-shape-right(8px, 80px);
+      @include content-image-shape-right(0.8rem, 8rem);
     }
     @media screen and (max-width: $media-breakpoint-mobile) {
       margin-bottom: 6rem;

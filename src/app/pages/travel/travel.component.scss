@@ -23,7 +23,7 @@
     }
   }
   &__image-wrapper-desktop {
-    @include content-image-shape-left(8px, 80px);
+    @include content-image-shape-left(0.8rem, 8rem);
     max-width: 46%;
     overflow: hidden;
     img {
@@ -35,7 +35,7 @@
     }
   }
   &__image-wrapper-mobile {
-    @include content-image-shape-left(8px, 80px);
+    @include content-image-shape-left(0.8rem, 8rem);
     display: none;
     margin-bottom: 6rem;
     max-width: 60%;

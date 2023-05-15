@@ -20,3 +20,19 @@
   max-width: $content-max-width-desktop;
   justify-content: center;
 }
+
+.registry-buttons-wrapper {
+  display: flex;
+  @media screen and (max-width: $media-breakpoint-mobile) {
+    flex-direction: column;
+  }
+  .button {
+    &:first-of-type {
+      margin-right: 3rem;
+      @media screen and (max-width: $media-breakpoint-mobile) {
+        margin-bottom: 3rem;
+        margin-right: 0;
+      }
+    }
+  }
+}

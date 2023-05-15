@@ -32,7 +32,7 @@ $ring-rotate-z: 33deg;
       height: 50rem;
       justify-content: space-between;
       margin: 0 auto;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: $media-breakpoint-mobile) {
         flex-direction: column;
         height: 100%;
         width: 100%;
@@ -89,14 +89,14 @@ $ring-rotate-z: 33deg;
 
     &__image-container {
       overflow: hidden;
-      @include content-semi-circle-left(8px, 370px);
+      @include content-semi-circle-left(0.8rem, 37rem);
       img {
         height: 100%;
         width: 100%;
       }
     }
     &__image-outline {
-      @include content-semi-circle-left(8px, 370px);
+      @include content-semi-circle-left(0.8rem, 37rem);
 
       bottom: 2.5rem;
       left: 0;
@@ -131,7 +131,7 @@ $ring-rotate-z: 33deg;
       overflow: hidden;
       padding: 5rem 1rem;
       width: 100%;
-      @include content-image-shape-left(8px, 140px);
+      @include content-image-shape-left(0.8rem, 14rem);
     }
 
     &__heading {
@@ -182,7 +182,7 @@ $ring-rotate-z: 33deg;
     }
   }
   .icon-container {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
   #rsvp-section,
   #photos-section {

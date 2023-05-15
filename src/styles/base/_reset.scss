@@ -11,13 +11,10 @@
   padding: 0;
 }
 
-:root {
-  --color-primary: #006895;
-}
-
 /* <html> = the root */
 html {
   font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+  overflow-x: hidden;
 }
 
 html {
@@ -90,9 +87,9 @@ SCROLLBAR
   width: 6px !important;
 }
 ::-webkit-scrollbar-track {
-  background: $border-color-primary;
+  background: var(--border-color-primary);
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 16px !important;
-  background: $border-color-secondary;
+  background: var(--border-color-secondary);
 }

@@ -1,6 +1,7 @@
 @import '../styles/abstracts/variables';
 
 .app-main {
-  border: 1rem solid $border-color-primary;
-  background: $bg-color-primary;
+  border: 1rem solid var(--border-color-primary);
+  background: var(--bg-color-primary);
+  transition: background-color 300ms ease-in;
 }

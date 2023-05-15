@@ -2,7 +2,7 @@
 @import '../../../styles/abstracts/mixins';
 
 .site-footer {
-  background-color: $bg-color-secondary;
+  background-color: var(--bg-color-secondary);
   &__wrapper {
     align-items: center;
     display: flex;

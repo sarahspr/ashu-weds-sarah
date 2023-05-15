@@ -1,4 +1,24 @@
 // Global Classes
+:root {
+  @include set-base-color('snow');
+
+  [data-page*='homepage'] {
+    @include set-base-color('snow');
+  }
+
+  [data-page*='events'] {
+    @include set-base-color('earth');
+  }
+
+  [data-page*='venue'] {
+    @include set-base-color('forest');
+  }
+
+  [data-page*='travel'] {
+    @include set-base-color('earth');
+  }
+}
+
 .section-wrapper {
   align-items: center;
   display: flex;
@@ -27,8 +47,8 @@
 .button {
   @include content-image-shape-left(0.2rem, 2rem);
   align-items: center;
-  background-color: $color-primary;
-  border: 0.2rem solid $color-tertiary;
+  background-color: var(--color-primary);
+  border: 0.2rem solid var(--color-tertiary);
   box-shadow: $button-shadow;
   display: flex;
   font-size: 1.75rem;
@@ -39,16 +59,16 @@
   transition: all 0.2s ease-in-out;
   &:hover,
   &:active {
-    background-color: $color-secondary;
+    background-color: var(--color-secondary);
   }
 
   &--secondary {
-    background-color: $bg-color-primary;
-    border: 1px solid $color-tertiary;
+    background-color: var(--bg-color-primary);
+    border: 0.1rem solid var(--color-tertiary);
 
     &:hover,
     &:active {
-      background-color: $bg-color-tertiary;
+      background-color: var(--bg-color-tertiary);
     }
   }
 }

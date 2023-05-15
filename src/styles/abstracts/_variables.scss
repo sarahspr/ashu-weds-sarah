@@ -1,4 +1,4 @@
-@import './colors';
+// @import './colors';
 
 /*
 ===============
@@ -6,58 +6,38 @@ COLORS
 ===============
 */
 // Color palette
-$color-blue: #006895;
-$color-black: #181818;
-$color-smoke: rgba(0, 0, 0, 0.2);
-$color-orange-light: #fff6f4;
-$color-pink-light: #fcf4ff;
-$color-dark-pink: #df899e;
-$color-light-green: #f8fff4;
+$color-blue: rgb(0, 104, 149);
+$color-black: rgb(24, 24, 24);
+$color-black--a01: rgba(0, 0, 0, 0.25);
+$color-orange: rgb(255, 212, 201);
+$color-orange--a01: rgb(255, 212, 201, 0.25);
+$color-orange--a02: rgb(255, 212, 201, 0.5);
+$color-orange--light: rgb(255, 247, 245);
+$color-orange--dark: rgb(255, 204, 191);
+// Pink
+$color-pink: rgb(246, 221, 255);
+$color-pink--light: rgb(252, 244, 255);
+$color-pink--dark: rgb(255, 189, 206);
+// Green
+$color-green: rgb(226, 255, 210);
+$color-green--a01: rgb(226, 255, 210, 0.25);
+$color-green--a02: rgb(226, 255, 210, 0.5);
+$color-green--light: rgb(248, 255, 244);
+$color-green--dark: rgb(209, 255, 182);
+// Teal
 $color-teal: rgb(207, 247, 254);
-$color-teal--a01: rgba(209, 248, 255, 0.3);
+$color-teal--a01: rgba(209, 248, 255, 0.25);
 $color-teal--a02: rgba(138, 230, 246, 0.5);
 $color-teal--light: rgb(244, 253, 255);
 $color-teal--dark: rgb(174, 244, 255);
-$color-yew: #fffaf0;
-
-// Color themes
-$color-primary: $color-teal;
-// Muted rabga() with a value of `a` version of primary
-$color-primary--a1: $color-teal--a01;
-$color-primary--a2: $color-teal--a02;
-// Secondary color: Lighter version of primary color
-$color-secondary: $color-teal--light;
-// Darker version of primary color
-$color-tertiary: $color-teal--dark;
-
-// Content colors
-$bg-color-primary: $color-secondary;
-$bg-color-secondary: $color-primary;
-$bg-color-tertiary: $color-tertiary;
-
-// Borders
-$border-color-primary: $bg-color-secondary;
-$border-color-secondary: $color-tertiary;
-
-// Colors Homepage
-// TODO: Need to change variables dynamically
-$bg-color-homepage: $bg-color-primary;
-$bg-color-secondary-homepage: $bg-color-secondary;
-
-// Colors travel
-$bg-color-travel: $bg-color-primary;
-$bg-color-secondary-travel: $bg-color-secondary;
-$border-color-travel: $border-color-primary;
+$color-yew: rgb(255, 250, 240);
 
 // Gradients
-$bg-gradient-primary: linear-gradient(174deg, $bg-color-primary 25%, $bg-color-secondary 83%);
-
-// Borders
-$content-border: 1px solid $border-color-primary;
+// $bg-gradient-primary: linear-gradient(174deg, var(--bg-color-primary) 25%, var(--bg-color-secondary) 83%);
 
 // Shadows
-$button-shadow: 0 0 $color-tertiary, 0 0 $color-tertiary, 0 4px 6px -1px $color-primary--a2,
-  0 2px 4px -2px $color-primary--a2;
+$button-shadow: 0 0 var(--color-tertiary), 0 0 var(--color-tertiary), 0 4px 6px -1px var(--color-primary--a2),
+  0 2px 4px -2px var(--color-primary--a2);
 
 // Spacing
 $default-margin: 6rem;
@@ -80,6 +60,3 @@ $light: 300;
 $regular: 400;
 $semi-bold: 500;
 $bold: 700;
-
-// TODO: create mixins, as we'd want to change border color on page transitions.
-$border-page: 1px solid $border-color-primary;

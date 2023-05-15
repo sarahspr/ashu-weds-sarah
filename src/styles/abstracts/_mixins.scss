@@ -16,15 +16,65 @@
 
 @mixin content-image-shape-left($b-radius, $min-radius) {
   border-radius: max(10%, $min-radius) $b-radius max(10%, $min-radius) $b-radius;
-  border: 0.3rem solid $border-color-secondary;
+  border: 0.3rem solid var(--border-color-secondary);
 }
 
 @mixin content-image-shape-right($b-radius, $min-radius) {
   border-radius: $b-radius max(10%, $min-radius) $b-radius max(10%, $min-radius);
-  border: 0.3rem solid $border-color-secondary;
+  border: 0.3rem solid var(--border-color-secondary);
 }
 
 @mixin content-semi-circle-left($b-radius, $min-radius) {
   border-radius: max(10%, $min-radius) $b-radius max(10%, $min-radius) max(10%, $min-radius);
-  border: 0.3rem solid $border-color-secondary;
+  border: 0.3rem solid var(--border-color-secondary);
+}
+
+@mixin color-teal() {
+  --color-primary: #{$color-teal};
+  // Muted rabga() with a value of `a` version of primary
+  --color-primary--a1: #{$color-teal--a01};
+  --color-primary--a2: #{$color-teal--a02};
+  // Secondary color: Lighter version of primary color
+  --color-secondary: #{$color-teal--light};
+  // Darker version of primary color
+  --color-tertiary: #{$color-teal--dark};
+}
+
+@mixin color-orange() {
+  --color-primary: #{$color-orange};
+  --color-primary--a1: #{$color-orange--a01};
+  --color-primary--a2: #{$color-orange--a02};
+  --color-secondary: #{$color-orange--light};
+  --color-tertiary: #{$color-orange--dark};
+}
+
+@mixin color-green() {
+  --color-primary: #{$color-green};
+  --color-primary--a1: #{$color-green--a01};
+  --color-primary--a2: #{$color-green--a02};
+  --color-secondary: #{$color-green--light};
+  --color-tertiary: #{$color-green--dark};
+}
+
+// Color mixins
+@mixin set-base-color($color-mode) {
+  // Background colors
+  --bg-color-primary: var(--color-secondary);
+  --bg-color-secondary: var(--color-primary);
+  --bg-color-tertiary: var(--color-tertiary);
+  // Border colors
+  --border-color-primary: var(--color-primary);
+  --border-color-secondary: var(--color-tertiary);
+
+  @if $color-mode == 'snow' {
+    @include color-teal;
+  } @else if $color-mode == 'earth' {
+    @include color-orange;
+  } @else if $color-mode == 'forest' {
+    @include color-green;
+  } @else if $color-mode == 'air' {
+    @include color-blue;
+  } @else {
+    @include color-teal;
+  }
 }

@@ -1,4 +1,4 @@
-<div class="app-main">
+<div class="app-main" [attr.data-page]="pageClass">
   <app-side-nav *ngIf="(deviceType$ | async) === 'mobile'; else topNav"></app-side-nav>
   <!--  Display this template only for tablet and desktop versions -->
   <ng-template #topNav>

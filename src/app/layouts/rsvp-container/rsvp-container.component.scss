@@ -3,7 +3,7 @@
 
 .rsvp-container {
   align-items: center;
-  background-color: $bg-color-secondary;
+  background-color: var(--bg-color-secondary);
   display: flex;
   flex-direction: column;
   justify-content: center;

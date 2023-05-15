@@ -8,7 +8,7 @@
   min-height: 95vh;
   padding: 5rem 1rem;
   width: 300px;
-  background-color: $bg-color-secondary;
+  background-color: var(--bg-color-secondary);
 
   &--horizontal {
     align-items: center;
@@ -52,7 +52,7 @@
   &__nav-link {
     border-radius: 20px 4px 20px 4px;
     color: $color-black;
-    font-size: 1.7rem;
+    font-size: 1.45rem;
     font-weight: $semi-bold;
     padding: 1.5rem 1.5rem;
     margin-top: 1.4rem;
@@ -62,7 +62,7 @@
       transition: background-color 0.16s linear;
 
       &:hover {
-        background-color: $color-primary;
+        background-color: var(--bg-color-secondary);
       }
     }
   }

@@ -103,7 +103,7 @@
     }
   }
   &__event-ritual-wrapper {
-    background-color: rgba($color-primary, 0.05);
+    background-color: var(--color-primary--a1);
     display: flex;
     flex-direction: column;
     max-width: 46%;
@@ -140,7 +140,7 @@
     }
     span {
       align-items: center;
-      border: 0.15rem solid $color-primary;
+      border: 0.15rem solid var(--border-color-primary);
       border-radius: 100%;
       display: flex;
       height: 3rem;

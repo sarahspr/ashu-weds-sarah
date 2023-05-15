@@ -2,7 +2,7 @@
 @import '../../../../../styles/abstracts/mixins';
 
 .rsvp-dialog {
-  background: $bg-color-primary;
+  background: var(--bg-color-primary);
   bottom: 0;
   display: flex;
   height: 100vh;

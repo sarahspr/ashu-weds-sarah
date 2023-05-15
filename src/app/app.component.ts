@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable, take } from 'rxjs';
 
 import { Device } from './core/models/device.interface';
@@ -13,13 +13,8 @@ import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 export class AppComponent implements OnInit {
   public deviceType$: Observable<Device> = this.deviceDetectorService.deviceType$;
   public pageClass: string = 'homepage';
-  @ViewChild('mainContainer') mainContainer: ElementRef;
 
-  constructor(
-    private deviceDetectorService: DeviceDetectorService,
-    private router: Router,
-    private renderer: Renderer2
-  ) {}
+  constructor(private deviceDetectorService: DeviceDetectorService, private router: Router) {}
 
   ngOnInit(): void {
     this.deviceDetectorService.init();

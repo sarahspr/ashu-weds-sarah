@@ -29,15 +29,15 @@
   border: 0.3rem solid var(--border-color-secondary);
 }
 
-@mixin color-periwinkle() {
-  --color-primary: #{$color-periwinkle};
+@mixin color-blue() {
+  --color-primary: #{$color-blue};
   // Muted rabga() with a value of `a` version of primary
-  --color-primary--a1: #{$color-periwinkle--a01};
-  --color-primary--a2: #{$color-periwinkle--a02};
+  --color-primary--a1: #{$color-blue--a01};
+  --color-primary--a2: #{$color-blue--a02};
   // Secondary color: Lighter version of primary color
-  --color-secondary: #{$color-periwinkle--light};
+  --color-secondary: #{$color-blue--light};
   // Darker version of primary color
-  --color-tertiary: #{$color-periwinkle--dark};
+  --color-tertiary: #{$color-blue--dark};
 }
 
 @mixin color-yellow() {
@@ -67,8 +67,8 @@
 // Color mixins
 @mixin set-base-color($color-mode) {
   // Update base colors
-  @if $color-mode == 'periwinkle' {
-    @include color-periwinkle;
+  @if $color-mode == 'sky' {
+    @include color-blue;
   } @else if $color-mode == 'sunshine' {
     @include color-yellow;
   } @else if $color-mode == 'forest' {
@@ -76,7 +76,7 @@
   } @else if $color-mode == 'rose' {
     @include color-pink;
   } @else {
-    @include color-periwinkle();
+    @include color-blue();
   }
 
   // Background colors

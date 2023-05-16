@@ -1,6 +1,6 @@
 // Global Classes
 :root {
-  @include set-base-color('perwinkle');
+  @include set-base-color('sky');
 
   [data-page*='homepage'] {
     @include set-base-color('rose');

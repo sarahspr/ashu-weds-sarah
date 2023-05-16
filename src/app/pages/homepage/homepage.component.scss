@@ -2,7 +2,7 @@
 @import '../../../styles/abstracts/mixins';
 @import '../../../styles/base/breakpoints';
 
-$ring-rotate-z: 40deg;
+$ring-rotate-z: 42deg;
 .homepage {
   &__hero {
     align-items: center;
@@ -14,20 +14,22 @@ $ring-rotate-z: 40deg;
     z-index: 1;
 
     &__rings-wrapper {
-      height: 9rem;
-      left: 29.3rem;
+      left: 25.9rem;
       opacity: 0;
       position: absolute;
-      top: -6.9rem;
+      top: -5.4rem;
       transform: rotateZ($ring-rotate-z);
-      width: 9rem;
+      width: 7.3rem;
 
       @include breakpoint-tablet {
         left: 28.4rem;
+        width: 9rem;
+        top: -6.8rem;
       }
 
       @include breakpoint-desktop {
-        left: 35.3rem;
+        left: 35.5rem;
+        top: -6.84rem;
       }
     }
 
@@ -47,7 +49,7 @@ $ring-rotate-z: 40deg;
       align-items: center;
       display: flex;
       flex-direction: column;
-      margin: 22rem 0 19rem;
+      margin: 15rem 0 9rem;
 
       @include breakpoint-tablet {
         flex-direction: column;
@@ -55,16 +57,19 @@ $ring-rotate-z: 40deg;
       }
 
       span {
-        font-size: 7.3rem;
+        font-size: 5.3rem;
 
+        @include breakpoint-tablet {
+          font-size: 7rem;
+        }
         @include breakpoint-desktop {
           font-size: 8rem;
         }
       }
     }
     &__heading {
-      font-size: 11rem;
-      line-height: 11rem;
+      font-size: 8rem;
+      line-height: 8rem;
       margin-bottom: 5.5rem;
 
       @include breakpoint-tablet {
@@ -79,7 +84,8 @@ $ring-rotate-z: 40deg;
     }
     &__image-wrapper {
       position: relative;
-      width: 32rem;
+      width: 28rem;
+      margin-left: -3rem;
 
       @include breakpoint-tablet {
         margin-left: 6.5rem;

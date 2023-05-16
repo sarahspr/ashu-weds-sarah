@@ -14,7 +14,7 @@ $color-yellow: rgb(246, 221, 153);
 $color-yellow--a01: rgb(246, 221, 153, 0.2);
 $color-yellow--a02: rgb(245, 220, 153, 0.5);
 $color-yellow--light: #feffff;
-$color-yellow--dark: rgb(234, 170, 0);
+$color-yellow--dark: rgb(241, 194, 64);
 // Pink
 $color-pink: rgb(250, 189, 202);
 $color-pink--a01: rgb(235, 4, 139, 0.2);
@@ -25,8 +25,8 @@ $color-pink--dark: rgb(250, 140, 162);
 $color-green: rgb(188, 220, 188);
 $color-green--a01: rgb(188, 220, 188, 0.2);
 $color-green--a02: rgb(188, 220, 188, 0.5);
-$color-green--light: #fefffe;
-$color-green--dark: #64ae64;
+$color-green--light: rgb(254, 255, 254);
+$color-green--dark: rgb(94, 191, 94);
 
 // Teal
 $color-blue: rgb(212, 235, 252);
@@ -51,7 +51,7 @@ $button-shadow--secondary: 0 0 var(--color-secondary), 0 0 var(--color-secondary
 $default-margin: 6rem;
 $default-padding: 2rem;
 $content-max-width-desktop: 108rem;
-$content-max-width-tablet: 80%;
+$content-max-width-tablet: 88%;
 
 /*
 ===============

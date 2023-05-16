@@ -40,7 +40,7 @@
   &__nav {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0;
     max-width: 95%;
     width: 100%;
   }
@@ -58,7 +58,7 @@
     margin-top: 1.4rem;
     text-decoration: none;
 
-    @include breakpoint-tablet() {
+    @include breakpoint-tablet {
       transition: background-color 0.16s linear;
 
       &:hover {

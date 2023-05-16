@@ -22,6 +22,10 @@ html {
   text-size-adjust: none; /* for other mobile browsers */
 }
 
+body {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;

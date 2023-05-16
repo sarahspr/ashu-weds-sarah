@@ -22,12 +22,13 @@
     .site-header__nav {
       flex-direction: row;
       margin: 0.4rem;
+      margin-right: 2rem;
       position: sticky;
       width: auto;
     }
 
     .site-header__nav-link {
-      margin: 0.25rem 0.3rem;
+      margin: 0.25rem 0.15rem;
       padding: 1.5rem 1.5rem;
     }
   }

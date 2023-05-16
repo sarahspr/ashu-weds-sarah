@@ -8,28 +8,50 @@ COLORS
 // Color palette
 $color-black: rgb(24, 24, 24);
 $color-black--a01: rgba(0, 0, 0, 0.2);
-// Orange
-$color-orange: rgb(255, 212, 201);
-$color-orange--a01: rgb(255, 212, 201, 0.2);
-$color-orange--a02: rgb(255, 212, 201, 0.5);
-$color-orange--light: rgb(255, 245, 243);
-$color-orange--dark: rgb(245, 163, 143);
+
+// Yellow
+$color-yellow: #fefacd;
+$color-yellow--a01: rgb(254, 250, 205, 0.2);
+$color-yellow--a02: rgb(254, 250, 205, 0.5);
+$color-yellow--light: #fffefd;
+$color-yellow--dark: rgb(252, 242, 125);
+// $color-orange: rgb(255, 212, 201);
+// $color-orange--a01: rgb(255, 212, 201, 0.2);
+// $color-orange--a02: rgb(255, 212, 201, 0.5);
+// $color-orange--light: rgb(255, 245, 243);
+// $color-orange--dark: rgb(245, 163, 143);
 // Pink
-$color-pink: rgb(246, 221, 255);
-$color-pink--light: rgb(252, 244, 255);
-$color-pink--dark: rgb(255, 163, 186);
+$color-pink: rgb(255, 175, 191);
+$color-pink--a01: rgb(235, 4, 139, 0.2);
+$color-pink--a02: rgb(235, 4, 139, 0.5);
+$color-pink--light: rgb(254, 244, 247);
+$color-pink--dark: rgb(251, 126, 151);
+// $color-pink--dark: rgb(255, 163, 186);
 // Green
-$color-green: rgb(214, 245, 198);
-$color-green--a01: rgb(214, 245, 198, 0.2);
-$color-green--a02: rgb(214, 245, 198, 0.5);
-$color-green--light: rgb(248, 253, 244);
-$color-green--dark: rgb(175, 245, 135);
+$color-green: rgb(205, 254, 225);
+$color-green--a01: rgba(149, 249, 189, 0.2);
+$color-green--a02: rgb(205, 254, 225, 0.5);
+$color-green--light: #fbfffc;
+$color-green--dark: rgb(85, 252, 153);
+// $color-green: rgb(214, 245, 198);
+// $color-green--a01: rgb(214, 245, 198, 0.2);
+// $color-green--a02: rgb(214, 245, 198, 0.5);
+// $color-green--light: rgb(248, 253, 244);
+// $color-green--dark: rgb(175, 245, 135);
+
 // Teal
-$color-teal: rgb(207, 247, 254);
-$color-teal--a01: rgba(209, 248, 255, 0.2);
-$color-teal--a02: rgba(138, 230, 246, 0.5);
-$color-teal--light: rgb(244, 253, 255);
-$color-teal--dark: rgb(161, 238, 250);
+$color-periwinkle: #cdd2fe;
+$color-periwinkle--light: rgb(252, 252, 255);
+$color-periwinkle--a01: rgb(205, 210, 254, 0.2);
+$color-periwinkle--a02: rgb(205, 210, 254, 0.5);
+$color-periwinkle--dark: rgb(145, 156, 253);
+// $color-teal: rgb(207, 247, 254);
+// $color-teal--a01: rgba(209, 248, 255, 0.2);
+// $color-teal--a02: rgba(138, 230, 246, 0.5);
+// $color-teal--light: rgb(244, 253, 255);
+// $color-teal--dark: rgb(161, 238, 250);
+
+//Yew
 $color-yew: rgb(255, 250, 240);
 
 // Gradients

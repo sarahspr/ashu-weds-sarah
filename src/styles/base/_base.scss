@@ -1,13 +1,13 @@
 // Global Classes
 :root {
-  @include set-base-color('snow');
+  @include set-base-color('perwinkle');
 
   [data-page*='homepage'] {
-    @include set-base-color('snow');
+    @include set-base-color('rose');
   }
 
   [data-page*='events'] {
-    @include set-base-color('earth');
+    @include set-base-color('sunshine');
   }
 
   [data-page*='venue'] {
@@ -15,7 +15,7 @@
   }
 
   [data-page*='travel'] {
-    @include set-base-color('earth');
+    @include set-base-color('eggplant');
   }
 }
 

@@ -29,23 +29,23 @@
   border: 0.3rem solid var(--border-color-secondary);
 }
 
-@mixin color-teal() {
-  --color-primary: #{$color-teal};
+@mixin color-periwinkle() {
+  --color-primary: #{$color-periwinkle};
   // Muted rabga() with a value of `a` version of primary
-  --color-primary--a1: #{$color-teal--a01};
-  --color-primary--a2: #{$color-teal--a02};
+  --color-primary--a1: #{$color-periwinkle--a01};
+  --color-primary--a2: #{$color-periwinkle--a02};
   // Secondary color: Lighter version of primary color
-  --color-secondary: #{$color-teal--light};
+  --color-secondary: #{$color-periwinkle--light};
   // Darker version of primary color
-  --color-tertiary: #{$color-teal--dark};
+  --color-tertiary: #{$color-periwinkle--dark};
 }
 
-@mixin color-orange() {
-  --color-primary: #{$color-orange};
-  --color-primary--a1: #{$color-orange--a01};
-  --color-primary--a2: #{$color-orange--a02};
-  --color-secondary: #{$color-orange--light};
-  --color-tertiary: #{$color-orange--dark};
+@mixin color-yellow() {
+  --color-primary: #{$color-yellow};
+  --color-primary--a1: #{$color-yellow};
+  --color-primary--a2: #{$color-yellow};
+  --color-secondary: #{$color-yellow--light};
+  --color-tertiary: #{$color-yellow--dark};
 }
 
 @mixin color-green() {
@@ -56,19 +56,27 @@
   --color-tertiary: #{$color-green--dark};
 }
 
+@mixin color-pink() {
+  --color-primary: #{$color-pink};
+  --color-primary--a1: #{$color-pink};
+  --color-primary--a2: #{$color-pink};
+  --color-secondary: #{$color-pink--light};
+  --color-tertiary: #{$color-pink--dark};
+}
+
 // Color mixins
 @mixin set-base-color($color-mode) {
   // Update base colors
-  @if $color-mode == 'snow' {
-    @include color-teal;
-  } @else if $color-mode == 'earth' {
-    @include color-orange;
+  @if $color-mode == 'periwinkle' {
+    @include color-periwinkle;
+  } @else if $color-mode == 'sunshine' {
+    @include color-yellow;
   } @else if $color-mode == 'forest' {
     @include color-green;
-  } @else if $color-mode == 'air' {
-    @include color-blue;
+  } @else if $color-mode == 'rose' {
+    @include color-pink;
   } @else {
-    @include color-teal;
+    @include color-periwinkle();
   }
 
   // Background colors

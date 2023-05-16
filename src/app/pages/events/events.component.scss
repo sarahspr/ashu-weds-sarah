@@ -83,7 +83,7 @@
     margin-bottom: 6rem;
     overflow: hidden;
     &:nth-child(odd) {
-      @include content-image-shape-right(0.8rem, 8rem);
+      @include content-image-shape-right(1.8rem, 0.8rem);
     }
     &:nth-child(even) {
       @include content-image-shape-left(0.8rem, 1.8rem);

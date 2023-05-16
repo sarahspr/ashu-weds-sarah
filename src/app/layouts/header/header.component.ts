@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { LogoComponent } from 'src/app/features/ux/components/logo/logo.component';
 import { EventSfxDirective } from 'src/app/features/ux/directives/event-sfx.directive';
 
@@ -12,6 +12,7 @@ import { EventSfxDirective } from 'src/app/features/ux/directives/event-sfx.dire
 })
 export class HeaderComponent {
   @Input() direction: 'horizontal' | 'vertical' = 'vertical';
+  @Output() logoClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
 
   constructor() {}
 }

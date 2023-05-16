@@ -1,5 +1,9 @@
 <header class="site-header" [ngClass]="{ 'site-header--horizontal': direction === 'horizontal' }">
-  <app-logo class="site-header__logo" [src]="'assets/images/logo-transparent.png'"></app-logo>
+  <app-logo
+    class="site-header__logo"
+    [src]="'assets/images/logo-transparent.png'"
+    (logoClick)="logoClick.emit($event)"
+  ></app-logo>
   <nav class="site-header__nav">
     <a href="events" class="site-header__nav-link"> <li class="site-header__nav-item">Itinerary</li></a>
     <a href="travel" class="site-header__nav-link"> <li class="site-header__nav-item">Travel</li></a>

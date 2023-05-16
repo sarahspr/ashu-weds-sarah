@@ -1,5 +1,5 @@
 import { NgIf } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,10 +11,12 @@ import { Router } from '@angular/router';
 })
 export class LogoComponent {
   @Input() src: string = '';
+  @Output() logoClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
 
   constructor(private router: Router) {}
 
   public onLogoClick($event: MouseEvent): void {
+    this.logoClick.emit($event);
     this.router.navigateByUrl('/');
   }
 }

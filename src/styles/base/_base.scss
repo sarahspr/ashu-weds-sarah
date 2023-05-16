@@ -64,7 +64,8 @@
 
   &--secondary {
     background-color: var(--bg-color-primary);
-    border: 0.1rem solid var(--color-tertiary);
+    border: 0.2rem solid var(--color-tertiary);
+    box-shadow: $button-shadow--secondary;
 
     &:hover,
     &:active {

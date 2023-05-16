@@ -7,7 +7,7 @@
         <h1 class="homepage__hero__heading">Sarah</h1>
       </div>
       <!-- Only display main image when device is not mobile  -->
-      <div class="homepage__hero__image-wrapper" *ngIf="(deviceType$ | async) != 'mobile'">
+      <div class="homepage__hero__image-wrapper">
         <div class="homepage__hero__image-outline"></div>
         <div class="homepage__hero__image-container">
           <img src="./assets/images/proposal-1.webp" alt="proposal" />
@@ -19,12 +19,12 @@
       </div>
     </div>
   </section>
-  <section class="homepage__getting-married">
+  <!-- <section class="homepage__getting-married">
     <div class="homepage__getting-married__container">
       <h2 class="homepage__getting-married__heading">We're Getting Married</h2>
       <h3 class="h5">November 4 & 5, 2023</h3>
     </div>
-  </section>
+  </section> -->
   <section class="homepage__our-story">
     <h2 class="homepage__our-story__heading">Our Story</h2>
     <!-- <p class="typography-para-enhanced">

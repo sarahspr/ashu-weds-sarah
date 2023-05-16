@@ -2,7 +2,7 @@
 @import '../../../styles/abstracts/mixins';
 @import '../../../styles/base/breakpoints';
 
-$ring-rotate-z: 33deg;
+$ring-rotate-z: 40deg;
 .homepage {
   &__hero {
     align-items: center;
@@ -15,14 +15,19 @@ $ring-rotate-z: 33deg;
 
     &__rings-wrapper {
       height: 9rem;
-      left: 34.6rem;
+      left: 29.3rem;
       opacity: 0;
       position: absolute;
       top: -6.9rem;
       transform: rotateZ($ring-rotate-z);
       width: 9rem;
-      .icon-image {
-        opacity: 0.65;
+
+      @include breakpoint-tablet {
+        left: 28.4rem;
+      }
+
+      @include breakpoint-desktop {
+        left: 35.3rem;
       }
     }
 

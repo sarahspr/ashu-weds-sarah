@@ -2,16 +2,26 @@
   <app-logo
     class="site-header__logo"
     [src]="'assets/images/logo-transparent.png'"
-    (logoClick)="logoClick.emit($event)"
+    (logoClick)="linkClick.emit($event)"
   ></app-logo>
   <nav class="site-header__nav">
-    <a href="events" class="site-header__nav-link"> <li class="site-header__nav-item">Itinerary</li></a>
-    <a href="travel" class="site-header__nav-link"> <li class="site-header__nav-item">Travel</li></a>
-    <a href="venue-and-accommodation" class="site-header__nav-link">
+    <a [routerLink]="'events'" (click)="linkClick.emit($event)" class="site-header__nav-link">
+      <li class="site-header__nav-item">Itinerary</li></a
+    >
+    <a [routerLink]="'travel'" (click)="linkClick.emit($event)" class="site-header__nav-link">
+      <li class="site-header__nav-item">Travel</li></a
+    >
+    <a [routerLink]="'venue-and-accommodation'" (click)="linkClick.emit($event)" class="site-header__nav-link">
       <li class="site-header__nav-item">Venue & Accomodation</li></a
     >
-    <a href="#rsvp-section" class="site-header__nav-link"> <li class="site-header__nav-item">RSVP</li></a>
-    <a href="#photos-section" class="site-header__nav-link"> <li class="site-header__nav-item">Photos</li></a>
-    <a href="#registry-section" class="site-header__nav-link"> <li class="site-header__nav-item">Registry</li></a>
+    <a [routerLink]="'/'" (click)="linkClick.emit($event)" fragment="rsvp-section" class="site-header__nav-link">
+      <li class="site-header__nav-item">RSVP</li></a
+    >
+    <a [routerLink]="'/'" fragment="photos-section" (click)="linkClick.emit($event)" class="site-header__nav-link">
+      <li class="site-header__nav-item">Photos</li></a
+    >
+    <a [routerLink]="'/'" fragment="registry-section" (click)="linkClick.emit($event)" class="site-header__nav-link">
+      <li class="site-header__nav-item">Registry</li></a
+    >
   </nav>
 </header>

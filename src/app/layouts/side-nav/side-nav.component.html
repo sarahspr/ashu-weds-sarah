@@ -2,5 +2,5 @@
 <app-hamburger-icon class="side-nav__icon" (iconClicked)="onHamburgerIconClick($event)"></app-hamburger-icon>
 
 <app-hamburger-menu [isVisible]="menuVisible" (onMenuHide)="menuVisible = false" class="side-nav__menu">
-  <app-header (logoClick)="menuVisible = false"></app-header>
+  <app-header (linkClick)="menuVisible = false"></app-header>
 </app-hamburger-menu>

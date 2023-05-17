@@ -8,7 +8,7 @@ $ring-rotate-z: 42deg;
     align-items: center;
     display: flex;
     height: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 101px);
     position: relative;
     width: 100%;
     z-index: 1;
@@ -20,6 +20,10 @@ $ring-rotate-z: 42deg;
       top: -5.4rem;
       transform: rotateZ($ring-rotate-z);
       width: 7.3rem;
+
+      @media screen and (max-width: $media-breakpoint-mobile-x-small) {
+        left: 24.5rem;
+      }
 
       @include breakpoint-tablet {
         left: 28.4rem;
@@ -105,10 +109,13 @@ $ring-rotate-z: 42deg;
         height: 100%;
         width: 100%;
       }
+      @media screen and (max-width: $media-breakpoint-mobile-x-small) {
+        margin: 0 auto;
+        max-width: 90%;
+      }
     }
     &__image-outline {
       @include content-semi-circle-left(0.8rem, 37rem);
-
       bottom: 2.5rem;
       left: 0;
       position: absolute;
@@ -116,6 +123,10 @@ $ring-rotate-z: 42deg;
       top: 0;
       transform: translate(1.8rem, 2rem);
       z-index: -1;
+      @media screen and (max-width: $media-breakpoint-mobile-x-small) {
+        margin: 0 auto;
+        max-width: 90%;
+      }
     }
   }
 
@@ -157,9 +168,9 @@ $ring-rotate-z: 42deg;
     min-height: 100vh;
     position: relative;
     width: 100%;
-
     &__heading {
       margin: 5rem;
+      text-align: center;
     }
 
     &__content-wrapper {

@@ -8,9 +8,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin: 5.5rem 0;
     max-width: $content-max-width-desktop;
     width: 100%;
+    &:first-of-type {
+      margin-top: 0;
+    }
     @media screen and (max-width: $media-breakpoint-desktop) {
       max-width: $content-max-width-tablet;
     }
@@ -19,7 +22,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: $default-margin 0;
+    margin: $default-margin 0 0;
   }
   &__date-title {
     margin-bottom: 2rem;

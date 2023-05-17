@@ -30,6 +30,9 @@
     padding: 1.5rem;
     text-align: center;
   }
+  &__event-attire {
+    font-style: italic;
+  }
   &__location {
     @media screen and (max-width: $media-breakpoint-mobile-small) {
       font-size: 2rem;

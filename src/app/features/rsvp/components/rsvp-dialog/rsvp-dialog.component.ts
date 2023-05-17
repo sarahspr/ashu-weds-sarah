@@ -30,8 +30,7 @@ export class RsvpDialogComponent {
     const container = this.rsvpFormContainer.nativeElement;
     const script = document.createElement('script');
 
-    // <script type="text/javascript" src="https://test-test.rsvpify.com/embed"></script>;
-    script.setAttribute('src', 'https://test-test.rsvpify.com/embed');
+    script.setAttribute('src', 'https://ashuwedssarah.rsvpify.com/embed');
     container.appendChild(script);
   }
 }

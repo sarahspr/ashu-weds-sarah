@@ -1,0 +1,43 @@
+@import '../../../styles/abstracts/variables';
+@import '../../../styles/abstracts/mixins';
+
+.loader {
+  align-items: center;
+  background-color: var(--bg-color-primary);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: $content-max-width-tablet;
+    min-height: 40vh;
+    position: relative;
+
+    @include breakpoint-desktop {
+      max-width: $content-max-width-desktop;
+    }
+  }
+
+  &__progress-ring {
+    position: absolute;
+    top: -30px;
+  }
+  &__logo {
+    max-width: 220px;
+  }
+
+  &__content {
+    margin-top: 108px;
+    text-align: center;
+  }
+}

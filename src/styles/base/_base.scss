@@ -85,3 +85,7 @@
   display: flex;
   width: 100%;
 }
+
+.no-scroll {
+  overflow: hidden !important;
+}

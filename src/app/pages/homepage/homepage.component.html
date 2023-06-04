@@ -10,11 +10,26 @@
       <div class="homepage__hero__image-wrapper">
         <div class="homepage__hero__image-outline"></div>
         <div class="homepage__hero__image-container">
-          <img src="./assets/images/proposal-1.webp" alt="proposal" />
+          <img
+            ngSrc="./assets/images/proposal-1.webp"
+            width="900"
+            height="1350"
+            alt="proposal"
+            (load)="onImageLoaded($event)"
+            priority
+          />
         </div>
 
         <div class="homepage__hero__rings-wrapper bounce">
-          <img src="./assets/images/icons/wedding-rings.png" alt="wedding rings" />
+          <img
+            ngSrc="./assets/images/icons/wedding-rings.png"
+            alt="wedding rings"
+            (load)="onImageLoaded($event)"
+            priority
+            width="127"
+            height="88"
+            priority
+          />
         </div>
       </div>
     </div>

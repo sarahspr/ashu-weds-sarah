@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,7 +10,10 @@ import { CommonModule } from '@angular/common';
 })
 export class LoaderComponent implements OnInit, OnDestroy, AfterViewInit {
   public ringRadius = 180;
+  // Allow animation to finish befere hiding loader
+  public laoderAnimationComplete = false;
   private circumference = this.ringRadius * 2 * Math.PI;
+  @Input() isLoading: boolean | null = null;
   @ViewChild('progressRingFiller') private ringFiller: ElementRef;
 
   constructor(private renderer: Renderer2) {}

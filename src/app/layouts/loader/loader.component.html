@@ -1,4 +1,4 @@
-<div class="loader">
+<div class="loader" [ngClass]="{ 'has-loaded': !isLoading }">
   <div class="loader__container">
     <svg class="loader__progress-ring" width="380" height="380">
       <circle

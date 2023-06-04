@@ -20,6 +20,12 @@ $ring-rotate-z: 42deg;
       top: -5.4rem;
       transform: rotateZ($ring-rotate-z);
       width: 7.3rem;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
 
       @media screen and (max-width: $media-breakpoint-mobile-x-small) {
         left: 24.5rem;

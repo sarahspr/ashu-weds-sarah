@@ -11,6 +11,7 @@
   padding: 5rem 1rem;
   text-align: center;
   width: 100%;
+  z-index: 1000;
 }
 
 .registry-wrapper {
@@ -22,17 +23,7 @@
 }
 
 .registry-buttons-wrapper {
-  display: flex;
-  @media screen and (max-width: $media-breakpoint-mobile) {
-    flex-direction: column;
-  }
   .button {
-    &:first-of-type {
-      margin-right: 3rem;
-      @media screen and (max-width: $media-breakpoint-mobile) {
-        margin-bottom: 3rem;
-        margin-right: 0;
-      }
-    }
+    display: block;
   }
 }

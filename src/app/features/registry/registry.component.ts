@@ -8,6 +8,4 @@ import { CommonModule } from '@angular/common';
   templateUrl: './registry.component.html',
   styleUrls: ['./registry.component.scss']
 })
-export class RegistryComponent {
-
-}
+export class RegistryComponent {}
